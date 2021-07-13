@@ -1,0 +1,16 @@
+{
+  "version": "Version",
+  "latest": "latest",
+  "releases": "Releases",
+  "prereleases": "Pre-releases",
+  "branches": "Branches",
+  "hideNavigationLabel": "Hide navigation",
+  "showNavigationLabel": "Show navigation",
+  "navigation": {
+    "specifications": "API Consoles"
+  },
+  "modal": {
+    "downloadSpecification": "Download",
+    "viewInGitHub": "View in GitHub"
+  }
+}

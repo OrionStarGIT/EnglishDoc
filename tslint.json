@@ -1,0 +1,56 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-consistent-codestyle",
+    "tslint-react",
+    "tslint-react-hooks",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "interface-name": [true, "never-prefix"],
+    "member-access": [true, "no-public"],
+    "no-console": [true, "log", "info"],
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "unified-signatures": false,
+    "curly": [true, "ignore-same-line"],
+    "jsx-no-lambda": false,
+    "prefer-const": true,
+    "arrow-return-shorthand": [true, "multiline"],
+    "no-duplicate-super": true,
+    "no-duplicate-imports": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": true,
+    "no-var-keyword": true,
+    "triple-equals": true,
+    "use-isnan": true,
+    "no-debugger": true,
+    "radix": true,
+    "react-hooks-nesting": "error",
+    "no-var-before-return": true,
+    "jsx-self-close": true,
+    "no-unnecessary-else": true,
+    "no-static-this": true,
+    "no-collapsible-if": true,
+    "early-exit": {
+      "options": { "max-length": 7, "ignore-constructor": true }
+    },
+    "no-empty": { "options": ["allow-empty-catch"], "severity": "error" },
+    "promise-function-async": true,
+    "no-invalid-template-strings": true,
+    "await-promise": true,
+    "no-string-throw": true,
+    "deprecation": true
+  },
+  "linterOptions": {
+    "exclude": ["*/node_modules/**/*"]
+  },
+  "ban-types": [
+    true,
+    ["Object", "Use {} instead."],
+    ["String"],
+    ["Function", "Use more precise type"]
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "siteMetadata": {
+    "siteUrl": "https://kyma-project.io/",
+    "twitterUsername": "kymaproject",
+    "title": "Kyma",
+    "description": "The Kyma project blog",
+    "feedUrl": "feed.xml"
+  },
+  "socialMedia": {
+    "twitter": {
+      "name": "Twitter",
+      "shortName": "Twitter",
+      "url": "https://twitter.com/kymaproject",
+      "icon": "twitter"
+    },
+    "github": {
+      "name": "GitHub",
+      "shortName": "GitHub",
+      "url": "https://github.com/kyma-project",
+      "icon": "github"
+    },
+    "slack": {
+      "name": "Slack",
+      "shortName": "Slack",
+      "url": "http://slack.kyma-project.io",
+      "icon": "slack"
+    },
+    "linkedIn": {
+      "name": "LinkedIn",
+      "shortName": "LinkedIn",
+      "url": "https://www.linkedin.com/company/kyma-project/",
+      "icon": "linkedin-in"
+    },
+    "youTube": {
+      "name": "YouTube",
+      "shortName": "YouTube",
+      "url": "https://www.youtube.com/channel/UC8Q8bBtYe9gQN-dQ-_L8JvQ",
+      "icon": "youtube"
+    }
+  },
+  "newsroomYoutubeVideos": ["wJzVWFGkiKk", "NI4cOWO9HnA"],
+  "quickWalkthroughYoutubeVideo": "kP7mSELIxXw",
+  "links": {
+    "KYMA_REPOSITORY_LINK": "https://github.com/kyma-project/kyma",
+    "SAP_PRIVACY_LINK": "https://www.sap.com/corporate/en/legal/privacy.html",
+    "SIG_LINK": "https://kyma-project.io/community/collaboration/#special-interest-group-working-group-special-interest-group-working-group",
+    "GOOGLE_SITE_VERIFICATION": "qHt6OkQ1MXU5a4ZLlkLLPRB35ZOu_upyScm2O9Jf8PY",
+    "ADD_KYMA_USER": "https://github.com/kyma-project/website/blob/main/docs/add-user.md",
+    "DOCS_OVERVIEW_NUTSHELL": "/docs/#overview-in-a-nutshell",
+    "DOCS_DETAILS_COMPONENTS": "/docs/#details-components",
+    "DOCS_INSTALLATION": "/docs/root/kyma#installation-installation",
+    "GETTING_STARTED": "/docs/root/getting-started",
+    "DOCS_INSTALL_CLI": "docs/cli/#installation-install-kyma-cli"
+  },
+  "landingPage": {
+    "ids": {
+      "newsroom": "newsroom",
+      "usedBy": "used-by"
+    }
+  },
+  "i18n": {
+    "en": {
+      "path": "en",
+      "locale": "English",
+      "default": true
+    }
+  },
+  "docs": {
+    "kyma": {
+      "displayName": "Kyma",
+      "organization": "kyma-project",
+      "repository": "kyma",
+      "branches": ["main"],
+      "lastReleases": 3,
+      "navPath": "",
+      "rootPath": {
+        "docsType": "root",
+        "docsTopic": "kyma"
+      }
+    },
+    "cli": {
+      "displayName": "CLI",
+      "organization": "kyma-project",
+      "repository": "cli",
+      "branches": ["main"],
+      "lastReleases": 3,
+      "navPath": "cli",
+      "rootPath": {
+        "docsType": "cli",
+        "docsTopic": "overview"
+      }
+    },
+    "control-plane": {
+      "displayName": "Control Plane",
+      "organization": "kyma-project",
+      "repository": "control-plane",
+      "branches": ["main"],
+      "lastReleases": 0,
+      "navPath": "control-plane",
+      "rootPath": {
+        "docsType": "control-plane",
+        "docsTopic": "kyma-control-plane"
+      }
+    }
+  }
+}

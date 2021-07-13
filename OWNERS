@@ -1,0 +1,17 @@
+filters:
+  '.*':
+    approvers:
+      - m00g3n
+      - pPrecel
+      - dbadura 
+      - tgorgol 
+      - rJankowski93
+    labels:
+      - area/core-and-supporting
+  '\.md$|/content/|^milv\.config\.yaml$':
+    approvers:
+      - documentation-approvers
+    reviewers:
+      - documentation-reviewers
+    labels:
+      - area/documentation

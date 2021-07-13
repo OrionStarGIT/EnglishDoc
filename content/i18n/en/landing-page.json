@@ -1,0 +1,111 @@
+{
+  "headline": "Extend your applications\nwith Kubernetes",
+  "manifesto": {
+    "paragraph": "{brand} {spelling} is a cloud-native application runtime that combines the power of Kubernetes with a set of best-in-class tools and open-source components that empower you to develop, run, and operate secure and scalable cloud-native applications.",
+    "brand": "Kyma",
+    "spelling": "/kee-ma/",
+    "githubButton": "Get it on GitHub",
+    "scrollButton": "Scroll to the next section"
+  },
+  "whatIs": {
+    "headline": "What is Kyma?",
+    "paragraph": "Kyma {spelling} is a platform for extending applications with serverless functions and microservices. It provides a selection of cloud-native projects glued together to simplify the creation and management of extensions.",
+    "spelling": "/kee-ma/",
+    "installButton": "Install"
+  },
+  "extensionsAndTools": {
+    "extend": {
+      "headline": "Create extensions...",
+      "paragraph": "Don't waste time rewriting your monoliths but focus on their extensibility instead. Make sure your application exposes an API and is able to send events to Kyma. Use our Console UI or CLI to connect, extend, and integrate applications.",
+      "readDocsButton": "Overview"
+    },
+    "tools": {
+      "headline": "...with tools at hand",
+      "paragraph": "Kyma gives you a properly configured, monitored, and secured Kubernetes cluster. It combines various open-source projects for authentication, logging, eventing, alerting, tracing, and many more. We ensured they play well together so you can only focus on coding.",
+      "readDocsButton": "Components"
+    }
+  },
+  "keyFeatures": {
+    "headline": "Key features",
+    "paragraph": "Kyma {spelling} is a platform for extending applications with serverless functions and microservices.",
+    "features": {
+      "extensibility": {
+        "title": "Serverless",
+        "paragraphs": [
+          "Kyma empowers developers to easily deploy workloads in form of Functions. With Kyma, you can focus on coding.",
+          "Simply write your Function code, add a configuration manifest, and push it to Kyma using supporting CLI or directly to git."
+        ]
+      },
+      "runtime": {
+        "title": "Eventing",
+        "paragraphs": [
+          "With Kyma, you can trigger workloads (Functions or microservices) using in-cluster events or external business events."
+        ]
+      },
+      "support": {
+        "title": "Observability",
+        "paragraphs": [
+          "Kyma comes with pre-configured open-source observability tools. You can easily monitor the performance of your microservices and Functions, scan logs for errors, and trace the request flow through the entire system."
+        ]
+      }
+    }
+  },
+  "inANutshell": {
+    "headline": "In a nutshell",
+    "paragraph": "With Kyma, your workloads are in the center. Kyma helps you expose their APIs, trigger them with events, enable them for external service consumption, and assure observability.",
+    "githubButton": "Get it on GitHub"
+  },
+  "usedBy": {
+    "headline": "Used by",
+    "paragraph": "Discover the main use cases of our happy customers",
+    "readMoreLink": "Read More",
+    "loadAll": "Load all",
+    "addYourCompany": "Add your company",
+    "accessibility": {
+      "companyLogo": "{company} logo",
+      "linkToCompanyWebsite": "Link to {company} website",
+      "linkToCompanyCaseStudy": "Link to {company} case study"
+    }
+  },
+  "community": {
+    "headline": "Connect with the Kyma community and get involved!",
+    "paragraphs": [
+      "Kyma has an active and vibrant community that supports its development and helps to drive it forward.",
+      "Join the community and participate in our {sigLink} meetings"
+    ],
+    "sigLink": "Special Interest Group and Working Group",
+    "linksHeader": "Talk to us!"
+  },
+  "earlyAdopters": {
+    "headline": "Early adopters"
+  },
+  "adopters": {
+    "headline": "Used by",
+    "paragraph": "Discover what our happy users have to say about their experience with Kyma.",
+    "readMoreLink": "Read More",
+    "addYourCompany": "Add your company",
+    "accessibility": {
+      "companyLogo": "{company} logo",
+      "linkToCompanyWebsite": "Link to {company} website",
+      "linkToCompanyCaseStudy": "Link to {company} case study"
+    }
+  },
+  "newsroom": {
+    "headline": "Newsroom",
+    "twitterHeader": "Twitter",
+    "twitterButton": "Check our tweets",
+    "youtubeHeader": "YouTube",
+    "youtubeButton": "Watch our videos",
+    "lastBlogPostHeader": "Kyma blog",
+    "lastBlogPostButton": "Read our posts"
+  },
+  "checkItOut": {
+    "headline": "Check it out",
+    "firstParagraphTitle": "Install Kyma locally",
+    "firstParagraph1": "Get Kyma CLI first. Choose from convenient installation {options}.",
+    "firstParagraph2": "With Kyma CLI, you are only two steps away from having the local Kyma installed.",
+    "secondParagraphTitle": "Explore Kyma",
+    "secondParagraph1": "Check out our Getting Started guides that will help you get familiar with Kyma and discover your own use cases.",
+    "learnMore": "Learn more"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "blog": "blog",
+    "docs": "docs",
+    "socialLinks": {
+      "slack": "Link to Slack channel"
+    }
+  },
+  "language": {
+    "en": "English",
+    "pt": "Português"
+  },
+  "banner": {
+    "readMoreLink": "Read more"
+  },
+  "header": {
+    "ariaLabel": "Go to main page"
+  },
+  "footer": {
+    "copyright": "Copyright © 2018-{actualYear} The Kyma project authors. {copyrightLink}",
+    "privacyStatement": "Privacy Statement",
+    "madeWithLove": "Made with {heartIcon} & {coffeeIcon} by Kyma maintainers."
+  },
+  "githubButtons": {
+    "stars": "Kyma's GitHub stars",
+    "forks": "Kyma's GitHub forks"
+  }
+}
