@@ -82,32 +82,36 @@ class Navigation extends Component<IntlInterface, State> {
     const menuVisible = !initial
       ? false
       : isOnMobile
-      ? mobileMenuVisible
-      : true;
+        ? mobileMenuVisible
+        : true;
 
     return (
       <NavigationWrapper>
-        {isOnMobile ? <Search /> : null}
-        <NavigationMobileButton onClick={this.toggleVisibility}>
+        {/*   {isOnMobile ? <Search /> : null} */}
+        {/*  <NavigationMobileButton onClick={this.toggleVisibility}>
           <Button.Light iconName="bars" iconPrefix="fas" />
-        </NavigationMobileButton>
+        </NavigationMobileButton> */}
         <NavigationList visible={menuVisible}>
-          <NavigationItem
+          {/* <NavigationItem
             key="mobile-button"
             visible={isOnMobile}
             onClick={this.toggleVisibility}
           >
             <Button.Light iconName="times" iconPrefix="fas" />
-          </NavigationItem>
-          <DocsNavigation toggleVisibility={this.toggleVisibility} />
-          {navigation.map(navItem => (
+          </NavigationItem> */}
+
+          {/* {navigation.map(navItem => (
             <NavigationItem key={navItem.title} onClick={this.toggleVisibility}>
               <NavigationIntLink to={navItem.path}>
                 {navItem.title}
               </NavigationIntLink>
             </NavigationItem>
-          ))}
+          ))} */}
           <NavigationItem>
+             <div style={{width: '300px'}}></div>
+          </NavigationItem>
+          {/* <DocsNavigation toggleVisibility={this.toggleVisibility} /> */}
+          {/* <NavigationItem>
             <NavigationExtLink to={slackMedia.url} ariaLabel={slackAriaLabel}>
               <Button.Light
                 iconName={slackMedia.icon}
@@ -116,7 +120,7 @@ class Navigation extends Component<IntlInterface, State> {
                 <span>{slackMedia.name}</span>
               </Button.Light>
             </NavigationExtLink>
-          </NavigationItem>
+          </NavigationItem> */}
 
           <NavigationItem key="search">
             {!isOnMobile ? <Search /> : null}

@@ -4,12 +4,8 @@ import Grid from "@styled/Grid";
 import Link from "@components/shared/Link";
 
 import { injectIntl, IntlInterface } from "@common/i18n";
-
-import Logo from "./assets/LogoSecond";
 import Navigation from "./Navigation";
 import { HeaderWrapper, HeaderLogo, GithubButtonsWrapper } from "./styled";
-
-import GithubButtons from "./GithubButtons";
 
 interface HeaderProps {
   horizontalBg?: boolean;
@@ -26,16 +22,15 @@ const Header: React.FunctionComponent<HeaderProps & IntlInterface> = ({
     <Grid.Container>
       <GithubButtonsWrapper>
         <Link.Internal
-          to="/"
+          to="/docs/"
           ariaLabel={formatMessage({ id: "header.ariaLabel" })}
         >
           <HeaderLogo horizontalBg={horizontalBg}>
-            <Logo />
+          <span style={{ 'color' : 'white' }}>OrionStar</span>
           </HeaderLogo>
         </Link.Internal>
-        <GithubButtons />
       </GithubButtonsWrapper>
-      {hiddenNav ? null : <Navigation />}
+      {false ? null : <Navigation />}
     </Grid.Container>
   </HeaderWrapper>
 );

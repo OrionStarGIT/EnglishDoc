@@ -2,8 +2,8 @@
   "siteMetadata": {
     "siteUrl": "https://kyma-project.io/",
     "twitterUsername": "kymaproject",
-    "title": "Kyma",
-    "description": "The Kyma project blog",
+    "title": "OrionStar",
+    "description": "The OrionStar project blog",
     "feedUrl": "feed.xml"
   },
   "socialMedia": {
@@ -67,7 +67,7 @@
   },
   "docs": {
     "kyma": {
-      "displayName": "Kyma",
+      "displayName": "OrionStar",
       "organization": "kyma-project",
       "repository": "kyma",
       "branches": ["main"],

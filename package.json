@@ -1,6 +1,6 @@
 {
   "name": "@kyma-project/website",
-  "description": "Kyma Project Website",
+  "description": "OrionStar Project Website",
   "license": "Apache-2.0",
   "private": true,
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/kyma-project/website"
   },
   "author": {
-    "name": "Kyma Website maintainers"
+    "name": "OrionStar Website maintainers"
   },
   "keywords": [
     "gatsby",

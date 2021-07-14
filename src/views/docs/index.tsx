@@ -40,7 +40,7 @@ const DocsView: React.FunctionComponent<PageContext<
     <GenericComponent
       pageContext={pageContext}
       layout={LayoutType.DOCS}
-      docsVersionSwitcher={docsVersionSwitcher}
+    
     />
   );
 };

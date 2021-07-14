@@ -4,7 +4,6 @@ import { SlidesBanner } from "./components/SlidesBanner";
 import CookiesBanner from "./components/CookiesBanner";
 import BackToTop from "./components/BackToTop";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 import { SlidesBannerProps } from "@typings/landingPage";
 import { PreviewPageContext } from "@typings/common";
@@ -31,6 +30,6 @@ export const DefaultLayout: React.FunctionComponent<DefaultLayoutProps &
     <BackToTop inDocsLayout={inDocsLayout} />
     <Header horizontalBg={horizontalHeaderBg} hiddenNav={inPreview} />
     <Content>{children}</Content>
-    <Footer />
+   {/*  <Footer /> */}
   </LayoutWrapper>
 );
