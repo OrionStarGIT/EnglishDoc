@@ -16,6 +16,12 @@ describe("sortGroupOfNavigation", () => {
           displayName: "a",
         },
       ],
+      opk: [
+        {
+          id: "a",
+          displayName: "a",
+        },
+      ],
     };
 
     const sortedNavigation = {
@@ -25,7 +31,19 @@ describe("sortGroupOfNavigation", () => {
           displayName: "a",
         },
       ],
-      components: [
+      apk: [
+        {
+          id: "a",
+          displayName: "a",
+        },
+      ],
+      opk: [
+        {
+          id: "a",
+          displayName: "a",
+        },
+      ],
+      voice: [
         {
           id: "a",
           displayName: "a",

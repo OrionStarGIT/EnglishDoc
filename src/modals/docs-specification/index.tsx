@@ -34,13 +34,13 @@ export const DocsSpecificationModal: React.FunctionComponent<DocsModalContext> =
 
   const getExitLocation = () => {
     if (!pathname) {
-      navigate(`/docs/`);
+      navigate(`/docs/root/get-started/`);
       return;
     }
 
     const docsComponentURL = pathname.split("specifications");
     if (!docsComponentURL || !docsComponentURL.length) {
-      navigate(`/docs/`);
+      navigate(`/docs/root/get-started/`);
       return;
     }
 

@@ -1,0 +1,8 @@
+{
+  "spec":{
+    "id":"voice-commands",
+    "displayName":"Voice Commands",
+    "description":"Voice Commands",
+    "type":"Voice"
+  }
+}

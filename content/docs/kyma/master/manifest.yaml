@@ -1,10 +1,15 @@
 ---
-metadata:
-  name: kyma-docs
+   
 spec:
   root:
-    displayName: Kyma
-    id: kyma
-  components:
-    - displayName: Service Mesh
-      id: service-mesh
+    displayName: Get Started
+    id: get-started
+  apk:
+    - displayName: APK development
+      id: apk-development
+  opk:
+    - displayName: OPK development
+      id: opk-development
+  voice:
+    - displayName: Voice Commands
+      id: voice-commands

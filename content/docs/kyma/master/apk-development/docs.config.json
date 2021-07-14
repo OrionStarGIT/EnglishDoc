@@ -1,0 +1,8 @@
+{
+  "spec":{
+    "id":"apk-development",
+    "displayName":"APK development",
+    "description":"Overall documentation for Service Mesh",
+    "type":"Apk"
+  }
+}

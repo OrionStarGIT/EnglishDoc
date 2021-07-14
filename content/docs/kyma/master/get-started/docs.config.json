@@ -1,8 +1,8 @@
 {
   "spec":{
-    "id":"kyma",
+    "id":"get-started",
     "displayName":"Get Started",
-    "description":"Overall documentation for Kyma",
+    "description":"Get Started",
     "type":"Root"
   }
 }

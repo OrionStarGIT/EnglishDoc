@@ -1,0 +1,8 @@
+{
+  "spec":{
+    "id":"opk-development",
+    "displayName":"OPK development",
+    "description":"Overall documentation for Service Mesh",
+    "type":"Opk"
+  }
+}

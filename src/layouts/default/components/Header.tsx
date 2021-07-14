@@ -22,7 +22,7 @@ const Header: React.FunctionComponent<HeaderProps & IntlInterface> = ({
     <Grid.Container>
       <GithubButtonsWrapper>
         <Link.Internal
-          to="/docs/"
+          to="/docs/root/get-started/"
           ariaLabel={formatMessage({ id: "header.ariaLabel" })}
         >
           <HeaderLogo horizontalBg={horizontalBg}>
