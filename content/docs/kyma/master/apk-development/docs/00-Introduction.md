@@ -42,5 +42,5 @@ RobotOS is developed based on the Android platform and provides a set of SDKs fo
    <video width="270" height="480" controls>
       <source src="./assets/use-robotos-home.mp4" type="video/mp4"> 
    </video>
-   @video[](./assets/use-robotos-home.mp4)
+   
    If you want to start an apk when you turn on the robot, you can set "default boot app" in the robot settings(Settings -- Other Settings -- Boot apps). 
