@@ -18,7 +18,7 @@ const NotFoundView: React.FunctionComponent = () => (
             <FormattedMessage id="404.headline" />
           </H>
           <div>
-            <Link.Internal to="/">
+            <Link.Internal to="/docs/root/get-started/">
               <FormattedMessage id="404.button">
                 {headline => (
                   <Button.Emphasized size="sm">{headline}</Button.Emphasized>
