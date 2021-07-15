@@ -17,10 +17,6 @@ import "../styles/css/global.css";
 import "../styles/css/docsearch.min.css";
 
 export const RootWrapper: React.FunctionComponent = ({ children }) => {
-   if(window.location.pathname.length <= 1) {
-     window.location.href = '/docs/root/get-started/'
-  } 
- 
   return (
   <RootProvider>
     <LocationProvider>
@@ -30,6 +26,7 @@ export const RootWrapper: React.FunctionComponent = ({ children }) => {
             <PopupService.Provider>
               <ModalProvider>{children}</ModalProvider>
               <Popup />
+            
             </PopupService.Provider>
           </div>
         </ThemeProvider>

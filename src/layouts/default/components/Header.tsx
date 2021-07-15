@@ -18,7 +18,7 @@ const Header: React.FunctionComponent<HeaderProps & IntlInterface> = ({
   hiddenNav,
   formatMessage,
 }) => (
-  <HeaderWrapper horizontalBg={true}>
+  <HeaderWrapper horizontalBg={horizontalBg}>
     <Grid.Container>
       <GithubButtonsWrapper>
         <Link.Internal
