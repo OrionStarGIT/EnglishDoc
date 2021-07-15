@@ -71,7 +71,7 @@
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-typescript": "^2.4.21",
     "gatsby-plugin-typography": "^2.2.5",
-    "gatsby-remark-embed-video": "^1.7.0",
+    "gatsby-remark-embed-video": "^1.7.1",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-remark": "^2.16.0",
     "generate-robotstxt": "^8.0.3",
