@@ -6,6 +6,7 @@ type: 'Get Started with OPK'
 ## Application directory structure
 Take a new project as an example to introduce the directory structure of the App project and the role of each file type:
 
+![directory structure](./assets/debug8.png)
 
 ## Application components
 Application components are the basic building blocks of robot applications. 
