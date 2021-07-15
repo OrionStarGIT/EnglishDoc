@@ -40,6 +40,16 @@ export const plugins: Plugins = [
     },
   },
   {
+    resolve: "gatsby-remark-embed-video",
+    options: {
+        width: 270,
+        ratio: 1.77, 
+        height: 420, 
+        related: false,
+        noIframeBorder: true
+    },
+},
+  {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
       trackingId: "UA-122665881-1",

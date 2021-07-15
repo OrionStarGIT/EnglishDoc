@@ -30,8 +30,8 @@ const CookiesMessageBanner: React.FunctionComponent<IntlInterface> = ({
     return null;
   }
 
-  return (
-    <StyledCookieBanner
+  return null
+    {/* <StyledCookieBanner
       disableStyle={true}
       dismissOnScroll={false}
       message={formatMessage({ id: "message" })}
@@ -50,8 +50,7 @@ const CookiesMessageBanner: React.FunctionComponent<IntlInterface> = ({
         </>
       }
       buttonMessage={formatMessage({ id: "closeButton" })}
-    />
-  );
+    /> */};
 };
 
 export default injectIntl("cookies")(CookiesMessageBanner);

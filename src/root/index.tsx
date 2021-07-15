@@ -16,7 +16,12 @@ import "../styles/css/typography.css";
 import "../styles/css/global.css";
 import "../styles/css/docsearch.min.css";
 
-export const RootWrapper: React.FunctionComponent = ({ children }) => (
+export const RootWrapper: React.FunctionComponent = ({ children }) => {
+   if(window.location.pathname.length <= 1) {
+     window.location.href = '/docs/root/get-started/'
+  } 
+ 
+  return (
   <RootProvider>
     <LocationProvider>
       <IntlProvider>
@@ -31,4 +36,4 @@ export const RootWrapper: React.FunctionComponent = ({ children }) => (
       </IntlProvider>
     </LocationProvider>
   </RootProvider>
-);
+)};

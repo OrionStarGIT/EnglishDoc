@@ -82,7 +82,7 @@ const SiteMetadata: React.FunctionComponent<SiteMetadataProps &
         <meta name="description" content={description} />
         <meta name="copyright" content={copyright} />
         <meta name="keywords" content={keywords} />
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href={withPrefix("/apple-touch-icon.png")}
@@ -91,8 +91,8 @@ const SiteMetadata: React.FunctionComponent<SiteMetadataProps &
           rel="mask-icon"
           color="#2872dd"
           href={withPrefix("/safari-pinned-tab.svg")}
-        />
-        <link
+        /> */}
+        {/* <link
           rel="icon"
           type="image/png"
           sizes="32x32"
@@ -103,7 +103,7 @@ const SiteMetadata: React.FunctionComponent<SiteMetadataProps &
           type="image/png"
           sizes="16x16"
           href={withPrefix("/favicon-16x16.png")}
-        />
+        /> */}
         {tags.map(tag => (
           <meta key={tag} property="article:tag" content={tag} />
         ))}

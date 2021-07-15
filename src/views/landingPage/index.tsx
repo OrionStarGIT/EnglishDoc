@@ -26,11 +26,11 @@ const LandingPageView: React.FunctionComponent<PageContext<
       {/* <CheckItOut /> */}
       {/* <UsedBy adopters={adopters} /> */}
 
-      <Headline />
+     {/*  <Headline />
       <WhatIs />
       <ExtensionsAndTools />
       <Newsroom latestBlogPosts={latestBlogPosts} />
-      <Adopters adopters={adopters} />
+      <Adopters adopters={adopters} /> */}
     </>
   );
 };

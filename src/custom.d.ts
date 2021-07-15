@@ -28,6 +28,11 @@ declare module "*.js" {
   export default content;
 }
 
+declare module "*.mp4" {
+  const content: any;
+  export default content;
+}
+
 declare module "prism-react-renderer";
 declare module "react-modal-hook";
 declare module "get-video-id";
