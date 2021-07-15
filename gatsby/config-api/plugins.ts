@@ -25,6 +25,7 @@ export const plugins: Plugins = [
     resolve: "gatsby-transformer-remark",
     options: {
       excerpt_separator: `<!-- overview -->`,
+      
     },
   },
   {
@@ -40,15 +41,37 @@ export const plugins: Plugins = [
     },
   },
   {
-    resolve: "gatsby-remark-embed-video",
+    resolve: `gatsby-remark-videos`,
     options: {
-        width: 270,
-        ratio: 1.77, 
-        height: 420, 
-        related: false,
-        noIframeBorder: true
-    },
-},
+      pipelines: [
+        {
+          name: 'vp9',
+          transcode: (chain: any) =>
+            chain
+              .videoCodec('libvpx-vp9')
+              .noAudio()
+              .outputOptions(['-crf 20', '-b:v 0']),
+          maxHeight: 480,
+          maxWidth: 900,
+          fileExtension: 'webm',
+        },
+        {
+          name: 'h264',
+          transcode: (chain: any) =>
+            chain
+              .videoCodec('libx264')
+              .noAudio()
+              .addOption('-profile:v', 'main')
+              .addOption('-pix_fmt', 'yuv420p')
+              .outputOptions(['-movflags faststart'])
+              .videoBitrate('1000k'),
+          maxHeight: 480,
+          maxWidth: 900,
+          fileExtension: 'mp4',
+        },
+      ],
+    }
+  },
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {

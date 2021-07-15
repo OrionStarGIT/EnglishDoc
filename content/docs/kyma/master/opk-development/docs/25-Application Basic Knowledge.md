@@ -6,23 +6,23 @@ type: 'Get Started with OPK'
 ## Application directory structure
 Take a new project as an example to introduce the directory structure of the App project and the role of each file type:
 
-
-- `app`   //Code directory
-    - `App.js `       //App's main interface
-    - `AppDebug.js`   //App debugging main interface (when debugging, start OPK without parameters, and simulate data here)
-    - `demo`  //Sample Code       
-        - `DemoScreen`    //SampleApp UI
-        - `DemoViewModel` //Functional code
-        - `DemoVoice` //Voice command receiver
-        - `DemoTrigger`   //Connection between Demo function and the main process (using trigger to jump between OPKs)
-    - `extraResource` //File resource directory (for example: audio and video)
-    - `img `      //Image resource directory
-    - `dist`      //OPK storage directory (may not exist initially, it will be created automatically after OPK is packaged)
-    - `node_modules`  //App dependency library (may not exist initially, execute npm install in project directory, will create automatically)
-    - `.npmrc`    //npm account configuration
-    - `package.json`  //App configuration and dependency library management
-    - `app.json`      //App's basic configuration file (cannot be modified)
-
+```
+  ├── app                           # Code directory
+  │    ├── App.js                   # App's main interface
+  │    ├── AppDebug.js              # App's main interface
+  │    └── demo                     # Sample Code
+  │         ├── DemoScreen          # SampleApp UI
+  │         ├── DemoViewModel       # Functional code
+  │         ├── DemoVoice           # Voice command receiver
+  │         └── DemoTrigger         # Connection between Demo function and the main process (using trigger to jump between OPKs)
+  ├── extraResource                 # File resource directory (for example: audio and video)
+  ├── img                           # Image resource directory
+  ├── dist                          # OPK storage directory (may not exist initially, it will be created automatically after OPK is packaged)
+  ├── node_modules                  # App dependency library (may not exist initially, execute npm install in project directory, will create automatically)
+  ├── .npmrc                        # npm account configuration
+  ├── package.json                  # App configuration and dependency library management
+  └── config.json                   # App's basic configuration file (cannot be modified)   
+```
 
 ## Application components
 Application components are the basic building blocks of robot applications. 
