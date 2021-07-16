@@ -2,7 +2,7 @@ import React from "react";
 
 import Grid from "@styled/Grid";
 import Link from "@components/shared/Link";
-
+import styled from 'styled-components'
 import { injectIntl, IntlInterface } from "@common/i18n";
 import Navigation from "./Navigation";
 import { HeaderWrapper, HeaderLogo, GithubButtonsWrapper } from "./styled";
@@ -12,6 +12,19 @@ interface HeaderProps {
   hiddenNav: boolean;
   search?: boolean;
 }
+
+const LogoImg = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white
+
+  img {
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 0px
+  }
+`
 
 const Header: React.FunctionComponent<HeaderProps & IntlInterface> = ({
   horizontalBg = false,
@@ -26,7 +39,11 @@ const Header: React.FunctionComponent<HeaderProps & IntlInterface> = ({
           ariaLabel={formatMessage({ id: "header.ariaLabel" })}
         >
           <HeaderLogo horizontalBg={horizontalBg}>
-          <span style={{ 'color' : 'white' }}>OrionStar</span>
+            <LogoImg> 
+              <img src={require('./assets/android-chrome-512x512.png')}></img>
+              <span>OrionStar</span>
+            </LogoImg>
+
           </HeaderLogo>
         </Link.Internal>
       </GithubButtonsWrapper>
