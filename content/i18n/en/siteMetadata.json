@@ -1,7 +1,7 @@
 {
   "title": "orionstar",
   "shortDescription": "RobotOS",
-  "description": "Kyma is an open-source project designed natively on Kubernetes. It allows you to extend enterprise applications in a quick and modern way, using serverless computing or microservice architecture.",
+  "description": "RobotOS is an open development platform developed by Orion Star. The platform provides a complete set of robot business solutions, including software/hardware environment, open source templates, Orionstar's AI technology, etc.",
   "author": "Kyma project authors",
   "keywords": "kyma,kyma-project,kyma-project-io,kubernetes,cloud-native,k8s,knative",
   "copyright": "Copyright © 2018-{actualYear} The Kyma project authors"
