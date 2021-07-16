@@ -10,12 +10,16 @@ const Header = styled.header`
   left: 0;
   background: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.25em 2em;
+  padding: 1.25em 3em;
   z-index: 99;
   height: auto;
+
+  img {
+    width: 187px; margin-bottom: 0px;
+  }
 
   ul {
     padding: 0;
@@ -43,6 +47,7 @@ const Header = styled.header`
 export default () => (
   <div style={{ height: '68px' }}>
     <Header>
+      <img  src={require('./assets/use/orionBase.png')}></img>
         <ul>
           <li>
             <Link
