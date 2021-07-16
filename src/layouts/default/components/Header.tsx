@@ -2,7 +2,7 @@ import React from "react";
 
 import Grid from "@styled/Grid";
 import Link from "@components/shared/Link";
-import styled from 'styled-components'
+import styled from "@styled";
 import { injectIntl, IntlInterface } from "@common/i18n";
 import Navigation from "./Navigation";
 import { HeaderWrapper, HeaderLogo, GithubButtonsWrapper } from "./styled";

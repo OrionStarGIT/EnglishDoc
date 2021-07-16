@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled from "@styled";
 import ProgramWindow from './ProgramWindow'
 
 const center = {
   'display': 'flex',
   'flex-direction': 'column',
+  background: 'white'
 }
 const header = {
   'display': 'flex',
