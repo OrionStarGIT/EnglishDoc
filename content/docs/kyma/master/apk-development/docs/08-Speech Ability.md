@@ -299,6 +299,8 @@ private void deinterleaveData(byte[] src, byte[] leftdest, byte[] rightdest, int
 
 *Note: All parameters are fixed parameters and cannot be changed, otherwise the data may not be collected.*
 
+There is a demo to show this function(worked with Mini):  [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-21_14%3A42%3A15_OrionAudioRecord.zip)
+
 Applicable Platform:
 
 <div class="fixed-table bordered-table">
