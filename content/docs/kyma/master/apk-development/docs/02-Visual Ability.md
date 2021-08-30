@@ -251,6 +251,8 @@ Applicable Platform:
 ## Remote registration
 Method name: startRegister
 
+<font color="red">Notice: To use this API, you need contect sales engineer, sign agreement to first. </font>
+
 Calling method:
 
 ``` java
@@ -294,7 +296,9 @@ Applicable Platform:
 </div>
 
 ## Remote identification
-Method name: getPersonInfoFromNet
+Method name: getPersonInfoFromNet 
+
+<font color="red">Notice: To use this API, you need contect sales engineer, sign agreement to first. </font>
 
 Calling method:
 ``` java
