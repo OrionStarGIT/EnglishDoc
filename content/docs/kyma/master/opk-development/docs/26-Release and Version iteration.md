@@ -35,6 +35,21 @@ For Greetbot, use the following commands:
 adb shell am broadcast -a com.ainirobot.install.plugin --es path /sdcard/robot/rndata/debug.opk
 ```
 
+## Uninstall the pack package locally
+
+mini tob and Greetbot:
+
+```shell
+adb shell am broadcast -a com.ainirobot.uninstall.plugin --es appid "appid"
+```
+
+## opk path (possible)
+
+
+```shell
+/sdcard/robot/rndata/  or   /sdcard/rndata/
+```
+
 ## Contact sales engineer
 
 The sales engineer will setup the following steps for you:
