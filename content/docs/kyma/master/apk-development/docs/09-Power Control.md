@@ -8,7 +8,7 @@ Method name: `startNaviToAutoChargeAction`
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().startNaviToAutoChargeAction(reqId, timeout, new ActionListener() {
     @Override
     public void onResult(int status, String responseString) throws RemoteException {
@@ -63,7 +63,7 @@ Applicable Platform:
 Method name: `stopAutoChargeAction`
 
 Calling method:
-```java
+``` java
 RobotApi.getInstance().stopAutoChargeAction(reqId, true);
 ```
 
@@ -84,7 +84,7 @@ Method name: `stopChargingByApp`
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().stopChargingByApp();
 ``` 
 
