@@ -18,7 +18,7 @@ Method name: setPoseEstimate
 
 Calling method:
 
-```java
+``` java
 try {
     JSONObject params = new JSONObject();
     //x coordinate
@@ -56,7 +56,7 @@ Method name: isRobotEstimate
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().isRobotEstimate(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -84,7 +84,7 @@ Method name: setLocation
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().setLocation(reqId, placeName, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -118,7 +118,7 @@ Method name: getLocation
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().getLocation(reqId, placeName, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -162,7 +162,7 @@ Method name: removeLocation
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().removeLocation(reqId, placeName, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -193,7 +193,7 @@ Method name: getPlaceList
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().getPlaceList(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -230,7 +230,7 @@ Method name: getPosition
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().getPosition(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -267,7 +267,7 @@ Method name: isRobotInLocations
 
 Calling method:
 
-```java
+``` java
 try {
     JSONObject params = new JSONObject();
     params.put(Definition.JSON_NAVI_TARGET_PLACE_NAME, placeName); //position name
@@ -309,7 +309,7 @@ Method name: getMapName
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().getMapName(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -337,7 +337,7 @@ Method name: switchMap
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().switchMap(reqId, mapName, new CommandListener(){
     @Override
     public void onResult(int result, String message) {
