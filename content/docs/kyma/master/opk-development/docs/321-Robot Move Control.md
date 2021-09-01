@@ -9,7 +9,7 @@ Method name: `motionArcWithObstacles`
 Calling method:
 
 ```
-//设置运动回调
+//set motion callback
 this.callback = new CommandListener()
 this.callback.addListener(
             CommandListener.EVENT_RESULT,
@@ -17,7 +17,7 @@ this.callback.addListener(
                 console.log(TAG, 'motionArcWithObstacles onResult', result);
             }
 );
-//运动调用
+//motion call
 RobotApi.motionArcWithObstacles(
             this.callback ? this.callback.getId() : -1,
             this.lineSpeed,
@@ -30,7 +30,7 @@ Parameter Description:
 - `lineSpeed`: Linear speed, value range: -1.2 to 1.2 (positive number means forward, negative number means backward).
 - `lineSpeed`: Angular velocity, value range: -2.2 ~ 2.2 (positive number means left turn, negative number means right turn)
 
-Note: There is no obstacle avoidance when backing, so use back with caution
+Note: There is no obstacle avoidance when backing, so make sure use back with caution
 
 Minimum version: 2.8.0
 
