@@ -37,13 +37,13 @@ adb shell am broadcast -a com.ainirobot.install.plugin --es path /sdcard/robot/r
 
 ## Uninstall the pack package locally
 
-mini tob and Greetbot:
+Mini and Greetbot:
 
 ```shell
 adb shell am broadcast -a com.ainirobot.uninstall.plugin --es appid "appid"
 ```
 
-## opk path (possible)
+## Opk path (possible)
 
 
 ```shell
