@@ -12,7 +12,7 @@ Person recognition requires the use of face photos for recognition. This ability
 
 ## Person information
 
-```java
+``` java
 int id; //face id
 int angle; //face angle
 double distance; //distance
@@ -40,7 +40,7 @@ stopGetAllPersonInfo
 
 Calling method:
 
-```java
+``` java
 PersonListener listener = new PersonListener() {
     @Override
     public void personChanged() {
@@ -72,7 +72,7 @@ Applicable Platform:
 Method name: getAllPersons
 
 Calling method:
-```java
+``` java
 //get all people infos in the robot's field of view
 List<Person> personList = PersonApi.getInstance().getAllPersons();
 //get all people infos within 1m of the robot's field of view
@@ -102,7 +102,7 @@ Method name: getAllBodyList
 
 Calling method:
 
-```java
+``` java
 //get all body infos in the robot's field of view
 List<Person> personList = PersonApi.getInstance().getAllBodyList();
 //get all body infos within 1m of the robot's field of view
@@ -132,7 +132,7 @@ Method name: getAllFaceList
 
 Calling method:
 
-```java
+``` java
 //get all face infos in the robot's field of view
 List<Person> personList = PersonApi.getInstance().getAllFaceList();
 //get all face infos within 1m of the robot's field of view
@@ -162,7 +162,7 @@ Method name: getCompleteFaceList
 
 Calling method:
 
-```java
+``` java
 List<Person> personList = PersonApi.getInstance().getCompleteFaceList();
 ```
 
@@ -187,7 +187,7 @@ Method name: getFocusPerson
 
 Calling method:
 
-```java
+``` java
 Person person = PersonApi.getInstance().getFocusPerson();
 ```
 
@@ -210,7 +210,7 @@ Method name: getPictureById
 
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().getPictureById(reqId, faceId, count, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -251,9 +251,11 @@ Applicable Platform:
 ## Remote registration
 Method name: startRegister
 
+<font color="red">Notice: To use this API, you need contect sales engineer, sign agreement to first. </font>
+
 Calling method:
 
-```java
+``` java
 RobotApi.getInstance().startRegister(reqId, personName, timeout, tryCount, secondDelay, new ActionListener() {
     @Override
     public void onResult(int status, String response) throws RemoteException {
@@ -294,10 +296,12 @@ Applicable Platform:
 </div>
 
 ## Remote identification
-Method name: getPersonInfoFromNet
+Method name: getPersonInfoFromNet 
+
+<font color="red">Notice: To use this API, you need contect sales engineer, sign agreement to first. </font>
 
 Calling method:
-```java
+``` java
 RobotApi.getInstance().getPersonInfoFromNet(reqId, faceId, pictures, new CommandListener() {
 @Override
 public void onResult(int result, String message) {

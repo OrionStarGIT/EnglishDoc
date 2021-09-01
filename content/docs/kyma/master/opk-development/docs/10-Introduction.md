@@ -5,9 +5,9 @@ description: 'update: 2021-07-01'
 
 Hello Robot! Welcome to the journey of robot development. Orion Star Robot provides multiple development methods. The current document introduces how to use JavaScript language to develop a robot application. 
 
-If you want to use Java language for development, please move to [APK development document]().
+If you want to use Java language for development, please move to [APK development document](https://ainirobot.gatsbyjs.io/docs/apk/apk-development).
 
-If you don’t know which development method is best for you, please [check this page]().
+If you don’t know which development method is best for you, please [check this page](https://ainirobot.gatsbyjs.io/docs/root/get-started/#build-robot-app-build-robot-app).
 
 
 ## Introduction to the platform

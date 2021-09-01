@@ -6,12 +6,13 @@ description: 'update: 2021-07-01'
 ## Find the right version SDK
 Different robot need different sdk lib, here is the sdk lib list. Check your robot and use the right one. Notice: even the Demo Code, you have to make sure the sdk lib right.
 
-GreetBot SDK: [Download]()
+GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A13_robotservice_release_bxm_v1.1.1.jar)
 
-Mini SDK: [Download]()
+Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
 
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
+Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-07-13_14%3A32%3A22_RobotSample-english.zip)
 
 
 ## Configure the default launcher
@@ -84,7 +85,7 @@ public class ModuleCallback extends ModuleCallbackApi {
 
 2. Connect to the server
 
-```Java 
+``` Java 
 RobotApi.getInstance().connectServer(this, new ApiListener() {
     @Override
     public void handleApiDisabled() {}
@@ -103,13 +104,13 @@ RobotApi.getInstance().connectServer(this, new ApiListener() {
 
 3. Set callback
 
-```Java 
+``` Java 
 RobotApi.getInstance().setCallback(new ModuleCallback());
 ```
 
 4. End instruction
 
-```Java 
+``` Java 
 RobotApi.getInstance().finishModuleParser(reqId, result);
 ```
 
@@ -117,7 +118,7 @@ When the received request or voice command is processed, finishModuleParser need
 
 5. Registration status monitoring
 
-```Java 
+``` Java 
 StatusListener statusListener = new StatusListener() {
     @Override
     public void onStatusUpdate(String type, String data) throws RemoteException {};

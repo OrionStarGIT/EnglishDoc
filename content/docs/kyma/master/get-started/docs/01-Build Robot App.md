@@ -11,7 +11,7 @@ Android application package (.apk)
 
 Use Java to develop APP for robots, which is developed based on Android.
 
-[Start building APK]()
+[Start building APK](https://ainirobot.gatsbyjs.io/docs/apk/apk-development)
 
 
 
@@ -20,7 +20,7 @@ Robot application package (.opk)
 
 Use JavaScript to develop APP suitable for robots, which is developed based on React Native.
 
-[Start building OPK]()
+[Start building OPK](https://ainirobot.gatsbyjs.io/docs/opk/opk-development)
 
 
 
