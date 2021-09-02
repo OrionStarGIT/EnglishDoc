@@ -23,7 +23,6 @@ interface Props {
 const gt = getTranslation("landingPage.adopters");
 
 export const Adopters: React.FunctionComponent<Props> = ({ adopters }) => (
-
   <AdoptersWrapper id={config.landingPage.ids.usedBy}>
     <Grid.Container as="section">
       <Grid.Row>
