@@ -7,13 +7,9 @@ import Button from "@components/shared/Button";
 import Paragraph from "@components/shared/Paragraph";
 
 import { AdoptersGallery } from "./AdoptersGallery";
-
 import { FormattedMessage, getTranslation } from "@common/i18n";
-
 import { Adopter } from "@typings/landingPage";
-
 import { AdoptersWrapper, AddYourCompanyWrapper } from "./styled";
-
 import config from "@config";
 
 interface Props {
