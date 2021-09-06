@@ -81,30 +81,6 @@ Applicable Platform:
 
 </div>
 
-## Set whether the sound can be picked up for a long time
-Method name: `setRecognizeMode`
-
-Calling method:
-```
-speechApi.setRecognizeMode(isContinue);
-```
-
-Parameter Description:
-
-- `isContinue`: Whether to enable long pickup. True means continuous recognition, When you recognize next time, you don’t need to wake up it; false means single recognition, each time you need to wake up before you can start speech recognition
-
-Minimum version: 1.0.0
-
-Applicable Platform:
-
-<div class="fixed-table bordered-table">
-
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
-|:-:|:-:|:-:|:-:|:-:|
-|Yes|Yes|Yes|Yes|Yes|
-
-</div>
-
 ## Identify the specified text content
 Method name: `queryByText`
 
