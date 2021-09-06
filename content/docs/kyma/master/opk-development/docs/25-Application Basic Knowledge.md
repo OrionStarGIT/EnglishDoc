@@ -166,9 +166,9 @@ There are two registrations in the sample code, one is for the official registra
 
 Relatively more information is required for formal registration:
 
-- `appKey`: OPK function identification. Can’t have the same name with other OPKs, globally unique, and manually define by yourself. (when switching OPK, the corresponding OPK will be found according to the appKey)
+- `appKey`: OPK function identification (when switching OPK, the corresponding OPK will be found according to the appKey)
 - `component`: OPK function start interface
-- `intent`: OPK start instruction. Where weather is the domain, get_weather is the intent, connected by the & symbol, and must be all lowercase letters. When another OPK specifies this instruction to do Trigger jump, OPK will start. Or when the global NLP parses out this command, OPK will start. (Only fill in the command to start OPK, all commands can be received after OPK is started)
+- `intent`: OPK start instruction. When another OPK specifies this instruction to do Trigger jump, OPK will start. Or when the global NLP parses out this command, OPK will start. (Only fill in the command to start OPK, all commands can be received after OPK is started)
 - `appId`: The appId used when creating the application
 - `priority`: Function priority (OPK will compare priority when switching, low priority cannot interrupt high priority, OPK will fail to switch, priority is an array of 1-3, 1 is the highest priority, 3 is the lowest)
 
