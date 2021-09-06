@@ -91,7 +91,7 @@ speechApi.setRecognizeMode(isContinue);
 
 Parameter Description:
 
-- `isContinue`: Whether to enable long pickup. True means continuous recognition, When you recognize next time, you don’t need to wake it up; false means single recognition, each time you need to wake up before you can start speech recognition
+- `isContinue`: Whether to enable long pickup. True means continuous recognition, When you recognize next time, you don’t need to wake up it; false means single recognition, each time you need to wake up before you can start speech recognition
 
 Minimum version: 1.0.0
 
