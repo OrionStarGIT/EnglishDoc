@@ -16,7 +16,7 @@ Ability to speak:
 
 ## Create speech service callback
 
-``` java
+```java
 SkillCallback mSkillCallback = new SkillCallback() {
     @Override
     public void onSpeechParResult(String s) throws RemoteException {
@@ -67,7 +67,7 @@ Applicable Platform:
 
 ## Connect to speech service
 
-``` java
+```java
 final SkillApi skillApi = new SkillApi();
 skillApi.connectApi(context, new ApiListener() {
      @Override
@@ -102,7 +102,7 @@ Method name: playText
 
 Call method：
 
-``` java
+```java
 skillApi.playText(text, new TextListener() {
      @Override
      public void onStart() {
@@ -143,7 +143,7 @@ Applicable Platform:
 Method name: stopTTS
 
 Calling method:
-``` java
+```java
 skillApi.stopTTS();
 ``` 
 
@@ -163,7 +163,7 @@ Applicable Platform:
 Method name: setRecognizeMode
 
 Calling method:
-``` java
+```java
 skillApi.setRecognizeMode(isContinue);
 ```
 
@@ -188,7 +188,7 @@ Method name: setRecognizable
 
 Calling method:
 
-``` java
+```java
 skillApi.setRecognizable(enable);
 ```
 
@@ -212,7 +212,7 @@ Applicable Platform:
 Method name: setAngleCenterRange
 
 Calling method:
-``` java
+```java
 skillApi.setAngleCenterRange(angleCenter, angleRange);
 ```
 
@@ -237,7 +237,7 @@ Applicable Platform:
 Method name: queryByText
 
 Calling method:
-``` java
+```java
 skillApi.queryByText(text);
 ``` 
 
@@ -261,7 +261,7 @@ Applicable Platform:
 
 ## Audio data collection
 
-``` java
+```java
 //Audio sampling rate (fixed 16000)
 private final int AUDIO_RATE = 16000;
 //Buffer length
@@ -315,7 +315,7 @@ Applicable Platform:
 Method name: textToMp3
 
 Calling method:
-``` java
+```java
 boolean status = RobotApi.getInstance().textToMp3(reqId, text, path, name,
     new CommandListener(){
         @Override
@@ -350,7 +350,7 @@ Parameter Description:
 - `listener`: CommandListener message callback{"code":0, "message":"err msg"}
 
 Return Value:
-``` java
+```java
 int result 0 command executed / -1 not executed
 ```
 

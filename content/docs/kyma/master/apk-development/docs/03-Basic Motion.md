@@ -8,7 +8,7 @@ Method name: goForward / goBackward
 
 Calling method:
 
-``` java
+```java
 CommandListener motionListener = new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -47,7 +47,7 @@ Method name: turnLeft / turnRight
 
 Calling method:
 
-``` java
+```java
 CommandListener rotateListener = new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -84,7 +84,7 @@ Method name: stopMove
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().stopMove(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -114,7 +114,7 @@ Method name: moveHead
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().moveHead(reqId, hMode, vMode, hAngle, vAngle, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -156,7 +156,7 @@ Method name: resetHead
  
 Method of calling:
 
-``` java
+```java
 RobotApi.getInstance().resetHead(reqId, new CommandListener() {
     @Override
     public void onResult(int result, String message) {
@@ -188,7 +188,7 @@ Method name: switchCamera
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().switchCamera(reqId, camera, new CommandListener() {
     @Override
     public void onResult(int result, String message) {

@@ -7,7 +7,7 @@ type: 'API Reference'
 Method name: `setLight`
 
 Calling method:
-``` java
+```java
 JSONObject params = new JSONObject();
 try {
     params.put(Definition.JSON_LAMB_TYPE, type);
@@ -33,7 +33,7 @@ Parameter Description:
 - `Color value`: 16-bit string in RGB arrangement, such as "F3F3F3" or "00FF00".
 
 Return Value:
-``` java
+```java
 int result 0 command executed / -1 not executed
 ```
 
@@ -53,7 +53,7 @@ Applicable Platform:
 Method name: `getRobotSn`
 
 Calling method:
-``` java
+```java
 boolean status = RobotApi.getInstance().getRobotSn(
     new CommandListener() {
         @Override
@@ -72,7 +72,7 @@ Parameter Description:
 
 Return Value:
 
-``` java
+```java
 int result 1 command executed / -1 not executed
 ```
 
@@ -92,7 +92,7 @@ Applicable Platform:
 Method name: getVersion
 
 Calling method:
-``` java
+```java
 String version = RobotApi.getInstance().getVersion();
 ```
 

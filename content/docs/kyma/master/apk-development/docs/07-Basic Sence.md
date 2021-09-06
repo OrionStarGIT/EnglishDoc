@@ -31,7 +31,7 @@ Method name: startCruise
 
 Result callback:
 
-``` java
+```java
 ActionListener cruiseListener = new ActionListener() {
     @Override
     public void onResult(int status, String responseString) throws RemoteException {
@@ -91,12 +91,12 @@ ActionListener cruiseListener = new ActionListener() {
 Calling method:
 
 - Default speed
-``` java
+```java
 RobotApi.getInstance().startCruise(reqId, route, startPoint, dockingPoints, cruiseListener);
 ```
 
 - Custom speed
-``` java
+```java
 RobotApi.getInstance().startCruise(reqId, route, startPoint, dockingPoints, linearSpeed, angularSpeed, cruiseListener);
 ```
 
@@ -113,7 +113,7 @@ Method name: stopCruise
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().stopCruise(reqId);
 ``` 
 
@@ -148,7 +148,7 @@ Applicable Platform:
 Method name: wakeUp
 
 Calling method:
-``` java
+```java
 RobotApi.getInstance().wakeUp(reqId, angle, new ActionListener() {
     @Override
     public void onResult(int status, String responseString) throws RemoteException {
@@ -188,6 +188,6 @@ Parameter Description:
 Method name: stopWakeUp
 
 Calling method:
-``` java
+```java
 RobotApi.getInstance().stopWakeUp(reqId);
 ```

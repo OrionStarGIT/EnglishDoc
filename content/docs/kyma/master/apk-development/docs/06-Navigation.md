@@ -15,7 +15,7 @@ Method name: startNavigation
 
 Result callback:
 
-``` java
+```java
 ActionListener navigationListener = new ActionListener() {
     @Override
     public void onResult(int status, String response) throws RemoteException {
@@ -70,18 +70,18 @@ ActionListener navigationListener = new ActionListener() {
 
 1. Default navigation speed
 
-``` java
+```java
 RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, time, navigationListener);
 ```
 
 2. Specify navigation speed (***This calling method is supported in V4.12***)
 
-``` java
+```java
 RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, time, linearSpeed, angularSpeed, navigationListener);
 ```
 3. Specify the coordinate point (***This calling method is supported in V4.12***)
 
-``` java
+```java
 RobotApi.getInstance().startNavigation(reqId, pose, coordinateDeviation, time, navigationListener);
 ```
 
@@ -112,7 +112,7 @@ Method name: stopNavigation
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().stopNavigation(reqId);
 ```
 
@@ -134,7 +134,7 @@ Method name: goPosition
 
 Result callback:
 
-``` java
+```java
 CommandListener goPositionListener = new CommandListener() {
     @Override
     public void onResult(int status, String response) {
@@ -174,7 +174,7 @@ public void onStatusUpdate(int status, String data) {
 
 Calling method:
 
-``` java
+```java
 Default speed
 try {
     JSONObject position = new JSONObject();
@@ -228,7 +228,7 @@ Method name: stopGoPosition
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().stopGoPosition(reqId);
 ```
 
@@ -252,7 +252,7 @@ Method description: The interface will only rotate left and right to the directi
 
 Calling method:
 
-``` java
+```java
 RobotApi.getInstance().resumeSpecialPlaceTheta(reqId,
     placeName,
     new CommandListener() {
@@ -270,7 +270,7 @@ Parameter Description:
 
 Return value:
 
-``` java
+```java
 int result 0 command executed / -1 not executed
 ```
 
