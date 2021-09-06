@@ -21,7 +21,7 @@ Applicable Platform:
 
 |Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
-|Yes|Yes|Yes|Yes|No|
+|Yes|Yes|Yes|Yes|Yes|
 
 </div>
 
@@ -43,7 +43,7 @@ Applicable Platform:
 
 |Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
-|Yes|Yes|Yes|Yes|No|
+|Yes|Yes|Yes|Yes|Yes|
 
 </div>
 
@@ -69,6 +69,6 @@ Applicable Platform:
 
 |Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
-|Yes|Yes|Yes|Yes|No|
+|Yes|Yes|Yes|Yes|Yes|
 
 </div>
