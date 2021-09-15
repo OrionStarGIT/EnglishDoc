@@ -75,8 +75,6 @@ public render() {
 }
 ```
 
-Continue to parse nlpData_object to obtain the desired content, and deliver it to the server or other places where it is needed
-
 #### After OPK has been started, parse the NLP data content
 
 
@@ -88,5 +86,6 @@ public onListenCallback(intent: string, result: any, id: number, text: string): 
     let nlpData_object = JSON.parse(result.nlpData); 
 };
 ```
+
 
 Continue to parse nlpData_object to obtain the desired content, and deliver it to the server or other places where it is needed
