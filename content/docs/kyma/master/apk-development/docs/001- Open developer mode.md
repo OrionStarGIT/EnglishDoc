@@ -17,7 +17,7 @@ ADB is closed by default in the factory version, and can only be temporarily tur
       <source src="/assets/docs/kyma/master/apk-development/docs/assets/one-finger-pull-down.mp4" type="video/mp4"> 
    </video> -->
 
-2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password.Obtain the dynamic password, view the 'Query dynamic password' section.
+2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password. Obtain the dynamic password, view the 'Query dynamic password' section.
 
 <img src="./assets/dynamic-password.jpeg" width="400px">
 
