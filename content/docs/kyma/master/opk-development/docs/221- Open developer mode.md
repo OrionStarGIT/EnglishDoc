@@ -11,9 +11,13 @@ In order to ensure the safety of the machine system, USB debugging (plug in adb)
 ## Open method
 ADB is closed by default in the factory version, and can only be temporarily turned on by the following methods:
 
-1. At any time (including self-check abnormality), three-finger pull down >> click the time zone multiple times in a row.
+1. At any time (including self-check abnormality), one-finger pull down >> click the time zone multiple times in a row.
 
-2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password.
+<!-- <video width="270" height="480" controls>
+      <source src="/assets/docs/kyma/master/apk-development/docs/assets/one-finger-pull-down.mp4" type="video/mp4"> 
+   </video> -->
+
+2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password.Obtain the dynamic password, view the 'Query dynamic password' section.
 
 <img src="./assets/dynamic-password.jpeg" width="400px">
 
