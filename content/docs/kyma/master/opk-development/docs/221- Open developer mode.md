@@ -13,9 +13,9 @@ ADB is closed by default in the factory version, and can only be temporarily tur
 
 1. At any time (including self-check abnormality), one-finger pull down >> click the time zone multiple times in a row.
 
-<!-- <video width="270" height="480" controls>
+<video width="270" height="480" controls>
       <source src="/assets/docs/kyma/master/apk-development/docs/assets/one-finger-pull-down.mp4" type="video/mp4"> 
-   </video> -->
+   </video>
 
 2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password. Obtain the dynamic password, view the 'Query dynamic password' section.
 
