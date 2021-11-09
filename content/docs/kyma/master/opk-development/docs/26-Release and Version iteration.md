@@ -35,6 +35,12 @@ For Greetbot, use the following commands:
 adb shell am broadcast -a com.ainirobot.install.plugin --es path /sdcard/robot/rndata/debug.opk
 ```
 
+For Lucki, use the following commands:
+
+```shell
+adb.exe shell am broadcast -a com.ainirobot.install.plugin --es path /sdcard/robot/rndata/debug.opk --es id 'appid'
+```
+
 ## Uninstall the pack package locally
 
 Mini and Greetbot:
