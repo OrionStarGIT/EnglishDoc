@@ -16,6 +16,7 @@ ADB is closed by default in the factory version, and can only be temporarily tur
 2. The dynamic password input page pops up, which displays the system date and time，and enter your dynamic password.
 
 <img src="./assets/dynamic-password.jpeg" width="400px">
+<img src="./assets/dynamic-password-query.png" width="400px">
 
 3. When "Enable debugging" is turned on, the second menu "Persistent debugging" is displayed.
     * The "Persistent debugging" menu is not displayed by default, and will only be displayed after "Enable debugging" is turned on.
