@@ -11,7 +11,7 @@ In order to ensure the safety of the machine system, USB debugging (plug in adb)
 ## Open method
 ADB is closed by default in the factory version, and can only be temporarily turned on by the following methods:
 
-1. At any time (including self-check abnormality), one-finger pull down >> click the time zone multiple times in a row.
+1. At any time (including self-check abnormality), one-finger pull down and click the time zone multiple times in a row.
 
 <video width="270" height="480" controls>
       <source src="/assets/docs/kyma/master/apk-development/docs/assets/one-finger-pull-down.mp4" type="video/mp4"> 
