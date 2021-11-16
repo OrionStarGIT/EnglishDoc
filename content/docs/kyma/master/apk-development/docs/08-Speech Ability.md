@@ -259,7 +259,8 @@ Applicable Platform:
 
 
 
-## Audio data collection
+## Sound recording
+This is a part about sound recording.
 
 ``` java
 //Audio sampling rate (fixed 16000)
