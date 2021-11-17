@@ -179,7 +179,7 @@ and download the new opk, see the video for specific operations.
 Three-finger pull-down -> Application Center -> Little Leopard.
 
    <video width="270" height="480" controls>
-            <source src="/assets/docs/kyma/master/faq/docs/assets/do_not_update1.mp4" type="video/mp4">
+            <source src="/assets/docs/kyma/master/faq/docs/assets/do_not_updata1.mp4" type="video/mp4">
    </video>
 
 ## Error obtaining application resources
