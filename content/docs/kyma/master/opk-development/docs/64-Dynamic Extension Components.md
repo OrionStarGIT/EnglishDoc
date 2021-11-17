@@ -132,7 +132,7 @@ The name of the national secret SM2 encryption and decryption library is Sm24jkx
 The invocation of NativeModule is supported by the React Native framework. For details, please refer to the official React Native documentation.
 
 ### 6. The robot loads the native module.
-In the orionos-sh debug mode, java code will not be loaded by reflection. We need to install the complete opk with the dex module into the machine through the orionos-sh run command, and then restart the Xiaobao program to load it. When starting the Leopard program, fill in the filter keyword "ReactPackageInDexUtil" in logcat to see the process of loading the dex file.
+In the orionos-sh debug mode, java code will not be loaded by reflection. We need to install the complete opk with the dex module into the machine through the orionos-sh run command, and then restart the Xiaobao program to load it. When starting the GreetBot program, fill in the filter keyword "ReactPackageInDexUtil" in logcat to see the process of loading the dex file.
 
 In the national secret SM encryption and decryption project, we can search for logs similar to the following, indicating that the library file has been loaded:
 

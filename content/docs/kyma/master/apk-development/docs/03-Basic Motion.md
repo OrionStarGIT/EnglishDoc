@@ -219,4 +219,4 @@ Applicable Platform:
 
 </div>
 
-*Note: Please check if the Leopard Secret you are using has a rear camera*
+*Note: Please check if the Robot you are using has a rear camera*
