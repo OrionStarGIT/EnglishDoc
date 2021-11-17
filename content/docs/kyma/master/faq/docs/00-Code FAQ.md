@@ -8,12 +8,12 @@ https://console.orionbase.cn
 
 Account (Reception backstage/EO backstage): Super administrator phone number and password
 
-<img src="./assets/environment-switch-1.png" width="400px">
+<img src="./assets/environment-switch-1.png">
 
 ### Publish the application->Application release
 
-<img src="./assets/environment-switch-2.png" width="400px">
-<img src="./assets/environment-switch-3.png" width="400px">
+<img src="./assets/environment-switch-2.png">
+<img src="./assets/environment-switch-3.png">
 
 Note:
 
@@ -25,5 +25,5 @@ Note:
 
 If you need to switch the OPK of the second opening, please switch to the RN environment, select the OPK application of the second opening in the reception background (https://jiedai.ainirobot.com/), publish the application -> switch and start.
 
-<img src="./assets/environment-switch-4.png" width="400px">
-<img src="./assets/environment-switch-4.png" width="400px">
+<img src="./assets/environment-switch-4.png">
+<img src="./assets/environment-switch-4.png">

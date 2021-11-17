@@ -46,7 +46,7 @@ If the App needs to be launched by default after booting, it needs to be configu
  
 And set in the settings (three-finger pull down and click on the settings to enter)-Boot Apps
 
-<img src="./assets/boot_app.png" width="400px">
+<img src="./assets/boot_app.png">
  
 ## Authority
 For complete SDK access, the following permissions need to be declared in AndroidManifest.xml
