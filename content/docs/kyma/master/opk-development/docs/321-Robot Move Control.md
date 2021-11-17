@@ -14,7 +14,7 @@ this.callback = new CommandListener()
 this.callback.addListener(
             CommandListener.EVENT_RESULT,
             (result: any) => {
-                console.log(TAG, 'motionArcWithObstacles onResult', result);
+                //console.log(TAG, 'motionArcWithObstacles onResult', result);
             }
 );
 //motion call
