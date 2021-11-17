@@ -113,7 +113,7 @@ Component name: `NavigationBackComponent`
 
 Component description: 
 
-Navigation component, the head will turn to the back during navigation, it is only effective on Leopard Secret model, and the effect is equivalent to NavigationComponent on other models.
+Navigation component, the head will turn to the back during navigation, it is only effective on GreetBot model, and the effect is equivalent to NavigationComponent on other models.
 
 Example of use:
 

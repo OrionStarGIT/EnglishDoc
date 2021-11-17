@@ -9,7 +9,7 @@ Component name: `ExDisplay`
 
 Component description: 
 
-The content display component that controls the big screen of the robot is only valid on the big screen robot of the Leopard.
+The content display component that controls the big screen of the robot is only valid on the big screen robot of the BigScreen.
 
 Example of use:
 
