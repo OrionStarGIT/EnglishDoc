@@ -18,7 +18,7 @@ Different robot products support different versions of dynamic expansion compone
 |:---------:|:-------------:|
 |GreetBot|5.12|
 |Mini|5.13|
-|Baodaping|4.18|
+|BigScreenBot|4.18|
 
 </div>
 
