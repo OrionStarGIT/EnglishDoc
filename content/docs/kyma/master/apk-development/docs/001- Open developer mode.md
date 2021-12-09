@@ -5,7 +5,7 @@ description: 'update: 2021-10-08'
 
 ## background
 In order to ensure the safety of the machine system, USB debugging (plug in adb) is disabled by default in future versions. The machine and corresponding versions are as follows:
-* Greetbot: V6.9 and later versions
+* GreetBot: V6.9 and later versions
 * Mini: V6.13 and later versions
 
 ## Open method
