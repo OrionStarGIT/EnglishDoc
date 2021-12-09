@@ -78,6 +78,24 @@ Applicable Platform:
 </div>
 
 
+## Get robot battery level
+
+Calling method:
+
+``` java
+RobotSettingApi.getInstance().getRobotString(Definition.ROBOT_SETTINGS_BATTERY_INFO);
+``` 
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|No|No|No|
+
+</div>
+
 
 ## Stop charging and leave the charging pile
 Method name: `stopChargingByApp`
@@ -98,4 +116,5 @@ Applicable Platform:
 
 </div>
 
-*Note: The line charging method cannot be used to disconnect from charging*
+*Note1: The line charging method cannot be used to disconnect from charging*
+*Note2: To use this api, you have to call RobotApi.getInstance().disableBattery(); first. To disable system battery control*
