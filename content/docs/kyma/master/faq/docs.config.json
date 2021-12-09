@@ -1,0 +1,8 @@
+{
+  "spec":{
+    "id":"faq",
+    "displayName":"FAQ",
+    "description":"FAQ help and support",
+    "type":"Faq"
+  }
+}

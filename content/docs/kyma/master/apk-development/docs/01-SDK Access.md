@@ -10,6 +10,10 @@ GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcl
 
 Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
 
+Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A38_robotservice_release_saiph_V6.11.jar)
+
+BigScreen SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
+
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
 Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-07-13_14%3A32%3A22_RobotSample-english.zip)
@@ -40,11 +44,9 @@ If the App needs to be launched by default after booting, it needs to be configu
 </intent-filter>
 ```
  
-And set in the settings (three-finger pull down and click on the settings to enter)-developer settings-boot up the program
+And set in the settings (three-finger pull down and click on the settings to enter)-Boot Apps
 
-*Note: The startup program setting function is only officially launched in OTA3*
-
-
+<img src="./assets/boot_app.png" width="400px">
  
 ## Authority
 For complete SDK access, the following permissions need to be declared in AndroidManifest.xml

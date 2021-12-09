@@ -1,5 +1,5 @@
 ---
-   
+
 spec:
   root:
     displayName: Get Started
@@ -13,3 +13,6 @@ spec:
   voice:
     - displayName: Voice Commands
       id: voice-commands
+  faq:
+    - displayName: FAQ
+      id: faq
