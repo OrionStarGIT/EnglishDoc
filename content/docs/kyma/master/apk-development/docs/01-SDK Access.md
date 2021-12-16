@@ -8,7 +8,7 @@ Different robot need different sdk lib, here is the sdk lib list. Check your rob
 
 GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A13_robotservice_release_bxm_v1.1.1.jar)
 
-Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
+Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A53%3A10_robotservice.zip)
 
 Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A38_robotservice_release_saiph_V6.11.jar)
 
@@ -16,7 +16,7 @@ BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.m
 
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
-Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-07-13_14%3A32%3A22_RobotSample-english.zip)
+Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A59%3A22_RobotSample-english.zip)
 
 
 ## Configure the default launcher
@@ -134,3 +134,9 @@ RobotApi.getInstance().unregisterStatusListener(statusListener);
 
 - Definition.STATUS_POSE: The current coordinates of the robot, continuously reported
 - Definition.STATUS_POSE_ESTIMAT: current positioning status, reported when the positioning status changes
+
+6. Set reqId
+
+Many SDK methods need to pass in the parameter reqId, which is an id used for debugging and tracking logs. 
+Passing in any number can make the function work normally, but for the convenience of log tracking and debugging, 
+it is recommended to make reqid an self-increasing static variable, or pass in different reqId to distinguish the calling function according to business needs.
