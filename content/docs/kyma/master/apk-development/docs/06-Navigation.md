@@ -85,6 +85,12 @@ RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, tim
 RobotApi.getInstance().startNavigation(reqId, pose, coordinateDeviation, time, navigationListener);
 ```
 
+4. Specify navigation acceleration (***This calling method is supported in V4.12***)(This interface only supports Lucki for the time being)
+
+``` java
+RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, time, linearSpeed, angularSpeed, isAdjustAngle, destinationRange, wheelOverCurrentRetryCount, multipleWaitTime, priority, linearAcceleration, angularAcceleration, navigationListener);
+```
+
 Parameter Description:
 
 - destName: Navigation destination name (must be set by setLocation first)
@@ -92,7 +98,14 @@ Parameter Description:
 - coordinateDeviation: the range of the destination, if the distance to the destination is within this range, it is considered to have been reached
 - time : Obstacle avoidance timeout time. If the robot's moving distance does not exceed 0.1m within this time, the navigation will fail, in milliseconds.
 - linearSpeed : navigation linear speed, range: 0.1 ~ 0.85 m/s default value: 0.7 m/s
-- angularSpeed：Navigation angular speed, range: 0.4 ~ 1.4 m/s Default value: 1.2 m/s The final navigation speed is obtained by combining linear speed and angular speed. Different linear speeds and angular speeds have an impact on the navigation movement mode. It is recommended that the linear speed and Angular speed keeps a certain law: angularSpeed ​​= 0.4 + (linearSpeed-0.1) / 3 * 4
+- angularSpeed : Navigation angular speed, range: 0.4 ~ 1.4 m/s Default value: 1.2 m/s The final navigation speed is obtained by combining linear speed and angular speed. Different linear speeds and angular speeds have an impact on the navigation movement mode. It is recommended that the linear speed and Angular speed keeps a certain law: angularSpeed = 0.4 + (linearSpeed-0.1) / 3 * 4
+- isAdjustAngle : Whether to adapt to the angle of the heading at the end of the navigation. If false is passed, it will return to the angle when the point is set
+- destinationRange : When the target point cannot be reached, the navigation is considered as successful as the distance from the target point
+- wheelOverCurrentRetryCount: Number of wheel stall attempts during navigation
+- multipleWaitTime : If there are multiple machines waiting during the navigation process, how long will it time out?
+- priority : Is 0
+- linearAcceleration : Navigation line acceleration, range: 0.4 ~ 0.8 m/s2 Default value: 0.7 m/s2
+- angularAcceleration : Navigation angular acceleration, range: 0.4 ~ 0.9 m/s2 Default value: 0.8 m/s2 The final navigation angular acceleration velocity is obtained after linear velocity conversion. Different linear accelerations and angular accelerations have an impact on the navigation motion mode. It is recommended that linear acceleration and Angular acceleration maintains a certain law: angularAcceleration= (linearSpeed / 0.8)
 
 *Note: Before calling this interface, you need to make sure that it has been located*
 
