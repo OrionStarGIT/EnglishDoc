@@ -6,13 +6,13 @@ description: 'update: 2021-07-01'
 ## Find the right version SDK
 Different robot need different sdk lib, here is the sdk lib list. Check your robot and use the right one. Notice: even the Demo Code, you have to make sure the sdk lib right.
 
-GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A13_robotservice_release_bxm_v1.1.1.jar)
+GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
 
 Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A53%3A10_robotservice.zip)
 
-Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A38_robotservice_release_saiph_V6.11.jar)
+Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A43%3A13_robotservice_lucki.zip)
 
-BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
+BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
 
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
