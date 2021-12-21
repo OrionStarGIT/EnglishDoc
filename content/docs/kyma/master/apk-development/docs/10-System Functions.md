@@ -27,10 +27,18 @@ RobotApi.getInstance().setLight(0, params.toString(), null);
 
 Parameter Description:
 
-- `reqId`: int type command id
-- `params`: String type, can contain the following parameters: type-Lighting effect type start-Start color end-End color startTime-Start time endTime-End time repeat-Loop times onTime-Duration freese-end lighting color
-- `listener`: ActionListener type message callback
-- `Color value`: 16-bit string in RGB arrangement, such as "F3F3F3" or "00FF00".
+- reqId: int type command id
+- params: String type, can contain the following parameters: type-Lighting effect type start-Start color end-End color startTime-Start time endTime-End time repeat-Loop times onTime-Duration freese-end lighting color
+- type: Is 0
+- startColor: Starting color value of lighting effect
+- endColor: End color value of lighting effect
+- startTime: The color stays at the beginning of the gradient
+- endTime: The time that the color stays at the end of the gradient
+- loopTime: Light effect gradual repetition times
+- duration: Time spent in the gradual change process
+- finalColor: Gradient transition color
+- listener: ActionListener type message callback
+- Color value: 16-bit string in RGB arrangement, such as "F3F3F3" or "00FF00".
 
 Return Value:
 ``` java
@@ -41,11 +49,13 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|No|Yes|Yes|No|
 
 </div>
+
+Setting up the lighting effect code demo can be found here (the code is suitable for Greetbot, please replace the robot jar package for other robots):[Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-21_11%3A32%3A54_RobotLight.zip)
 
 
 
@@ -80,7 +90,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -100,11 +110,13 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
 </div>
+
+
 
 ## Prohibit system functions
 
@@ -118,7 +130,7 @@ Calling method:
 RobotApi.getInstance.disableEmergency();
 ```
 
-API for obtaining Emergency status:
+API for obtaining emergency status:
 
 ``` java
 RobotApi.getInstance().getRobotStatus(Definition.STATUS_EMERGENCY,new StatusListener(){
@@ -133,7 +145,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -149,7 +161,7 @@ Calling method:
 RobotApi.getInstance().disableBattery();
 ```
 
-API for obtaining Emergency status:
+API for obtaining battery status:
 
 ``` java
 RobotSettingApi.getInstance().getRobotString(Definition.ROBOT_SETTINGS_BATTERY_INFO);
@@ -159,7 +171,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -179,11 +191,13 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |No|No|Yes|No|No|
 
 </div>
+
+
 
 ## Dormant
 
@@ -197,7 +211,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
 |:-:|:-:|:-:|:-:|:-:|
 |No|No|Yes|No|No|
 
