@@ -1,6 +1,7 @@
 ---
 title: 'SDK Access'
 description: 'update: 2021-07-01'
+type: 'SDK Access'
 ---
 
 ## Find the right version SDK

@@ -204,7 +204,8 @@ Applicable Platform:
 Scene introduction:
 
 ``` java
-Hibernation is a mode that allows the robot to keep running at low power consumption when there is no task or when the battery is low
+Hibernation is a mode that allows the robot to keep running at low power consumption when there is no task or when the battery is low. To use this function , you need to add this to your project.
+<uses-permission android:name="com.ainirobot.coreservice.robotSettingProvider" />
 ```
 
 Applicable Platform:
