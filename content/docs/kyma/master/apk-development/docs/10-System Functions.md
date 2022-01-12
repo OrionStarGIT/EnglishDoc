@@ -130,7 +130,7 @@ Calling method:
 RobotApi.getInstance.disableEmergency();
 ```
 
-API for obtaining emergency status:
+API for obtaining emergency status, or rigister listener:
 
 ``` java
 RobotApi.getInstance().getRobotStatus(Definition.STATUS_EMERGENCY,new StatusListener(){
@@ -139,6 +139,12 @@ RobotApi.getInstance().getRobotStatus(Definition.STATUS_EMERGENCY,new StatusList
                 Log.d("onStatusUpdate","Status:"+data);
             }
         });
+RobotApi.getInstance().registerStatusListener(Definition.STATUS_EMERGENCY,new StatusListener(){
+    @Override
+    public void onStatusUpdate(String type, String data) throws RemoteException {
+            Log.d("onStatusUpdate","status:"+type+";value:"+data);
+    }
+});
 ```
 
 Applicable Platform:
