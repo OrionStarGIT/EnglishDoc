@@ -25,5 +25,5 @@ BigScreenBot display content must apply for the SYSTEM_ALERT_WINDOW permission o
     android:scaleType="fitXY"/>
 ```
 
-[Sample code](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2022-01-12_19%3A05%3A21_DoubleScreen.zip)
+[Sample code](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2022-01-13_17%3A53%3A33_DoubleScreen.zip)
 
