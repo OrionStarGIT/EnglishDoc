@@ -1,5 +1,7 @@
 ---
-title: 'BigScreenBot Development' description: 'update: 2021-11-24'
+title: 'BigScreenBot Development' 
+description: 'update: 2021-11-24'
+type: 'API Reference'
 ---
 
 ## Introduction
