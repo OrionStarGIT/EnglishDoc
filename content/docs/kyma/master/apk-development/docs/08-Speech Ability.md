@@ -316,6 +316,7 @@ Applicable Platform:
 
 ## text to mp3
 Method name: textToMp3
+Notice: this API only work with Chinese Launguage.
 
 Calling method:
 ``` java
