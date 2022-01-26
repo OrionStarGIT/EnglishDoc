@@ -48,7 +48,6 @@ And set in the settings (three-finger pull down and click on the settings to ent
 
 <img src="./assets/boot_app.png"/>
  
-## Authority
 For complete SDK access, the following permissions need to be declared in AndroidManifest.xml
 
 ```xml
