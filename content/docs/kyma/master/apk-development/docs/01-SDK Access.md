@@ -50,6 +50,7 @@ And set in the settings (three-finger pull down and click on the settings to ent
  
 ## Authority
 For complete SDK access, the following permissions need to be declared in AndroidManifest.xml
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
