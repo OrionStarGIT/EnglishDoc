@@ -13,6 +13,9 @@ spec:
   voice:
     - displayName: Voice Commands
       id: voice-commands
+  server:
+    - displayName: Enterprise Open Platform API
+      id: jiedai-server-api
   faq:
     - displayName: FAQ
       id: faq
