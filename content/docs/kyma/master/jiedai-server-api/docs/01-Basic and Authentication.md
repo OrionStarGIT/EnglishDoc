@@ -99,7 +99,7 @@ Use get or post to send those parameters
 
 |Parameter|Type|Required|Description|
 |:-:|:-:|:-:|:-:|
-|appid|string|Yes|the appid issued to the integrator, for example|ori-010aaf61fc3923150557c15ebd30|
+|appid|string|Yes|the appid issued to the integrator, for example: ori-010aaf61fc3923150557c15ebd30|
 |access_token|string|No|Access token for Api. In the access_token authentication mode, this parameter must be passed to all other interfaces except the interface that obtains the Access token for Api|
 |sign|string|No|Signature sign. In the signature authentication mode, all interfaces must pass this parameter.|
 |corpid|string|No|Enterprise id. This parameter or corpid must be passed if the issued appid is based on agent authorization. It is a mandatory parameter in some interfaces and will be explained in the specific interface.|
@@ -118,7 +118,7 @@ The responses of all interfaces are json strings (except for the interface of th
 
 |Parameter|Type|Description|
 |:-:|:-:|:-:|
-|ret|string|error code. 0 is success, non-0 is failure.|Error codes are divided into global error codes and business error codes. The public error codes are listed in this chapter, and the error codes of other specific categories of interfaces are given in specific categories or specific interfaces.|
+|ret|string|error code. 0 is success, non-0 is failure. Error codes are divided into global error codes and business error codes. The public error codes are listed in this chapter, and the error codes of other specific categories of interfaces are given in specific categories or specific interfaces.|
 |msg|string|error message. When ret is 0, the value of this parameter is an empty string, and when ret is non-zero, this parameter will give a specific error description. For example appid invalid.|
 |stime|string|The current time of the server, an integer timestamp, in seconds, for example 1539336895.|
 |strace|string|The trace string returned by us, each response has a unique tracker, which is used to trace and query logs during joint debugging.|
@@ -167,7 +167,7 @@ Since the effective time of the access_token may be adjusted in the future, the 
 |Parameter|Type|Required|Description|
 |:-:|:-:|:-:|:-:|
 |grant_type|string|Yes|Here pass a fix string client_credential|
-|appid|string|Yes|appid issued to integrator，for example|ori-e802392efc56ffcdba97ce35ddea|
+|appid|string|Yes|appid issued to integrator，for example: ori-e802392efc56ffcdba97ce35ddea|
 |secret|string|Yes|appsecret issued to integrator，for example 5c65892744ee1d7dcbffd02159ccbd06|
 
 </div>
@@ -186,7 +186,7 @@ Note: Only the service response parameters are listed here, please refer to the 
 |Parameter|Type|Description|
 |:-:|:-:|:-:|
 |access_token|string|interface call credentials access_token|
-|expires_in|string|The expiration time of the access_token, in seconds, for example, 7200 seconds means this|access_token will expire after 7200 seconds.|
+|expires_in|string|The expiration time of the access_token, in seconds, for example, 7200 seconds means this access_token will expire after 7200 seconds.|
 
 </div>
 
@@ -277,7 +277,7 @@ signed method:
 Example – form submission: 
 + appsecret is
 
->	test_secret
+> test_secret
 
 + The request parameter is
 
@@ -287,7 +287,7 @@ Example – form submission:
 
 > ctime=1614149115
 
-+	SignPre is
++ SignPre is
 
 > appid=test_appid&ctime=1614149115&user_id=test_user_id 
 
