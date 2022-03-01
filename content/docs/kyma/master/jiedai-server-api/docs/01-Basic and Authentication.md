@@ -37,7 +37,6 @@ The integrator needs to inform the public internet outgoing IP address of the
 server that calls the authentication interface (see the following description for the 
 authentication interface).
 
-
 After the IP address is added to the IP whitelist , the integrator can successfully call the authentication interface.
 
 1.2.1.2 Signature authentication method

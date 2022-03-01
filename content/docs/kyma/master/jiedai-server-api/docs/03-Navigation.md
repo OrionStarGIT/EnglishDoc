@@ -1,0 +1,86 @@
+---
+title: 'Navigation'
+description: 'update: 2022-02-28'
+---
+
+## 1. Overview
+
+### 1.1 Overview Description
+
+This doc can be used to demonstrate the robot open API of enterprise open platform to interface caller- The calling method of command interface and cautions 
+
+### 1.2 Preparation
+
+Please read the "Orion Star open API of Robot Enterprise Open Platform - Basics and Authentication and Orion Star open API of Robot Enterprise Open Platform-Robot Command-Basic first
+
+
+## 2. Robot Command Interface - Navigation
+
+### 2.1 Interface of command “navigate to the target place”that distribute o robot
+
+Interface address
+
++ POST|GET /v1/robot/pipe/cmd_navigation
+
+Required parameter
+
+> Note: Do not forget to pass the public request parameters;
+
+<div class="fixed-table bordered-table">
+
+|Parameter|Type|Required|Description|
+|:-:|:-:|:-:|:-:|
+|msg_value|string|Yes|The spot name that needs to arrive |
+</div>
+
+Business response parameters
+
+> Description：There’s no business parameters except public response parameters
+
+### 2.2 To search the command response interface that distribute on the robot to navigate the robot to target place
+
+To serach the execute return that distribute on the robot to navigate to target place
+
+Interface address
+
++ POST|GET /v1/robot/pipe/cmd_navigation/result
+
+Required parameter
+
+> Description：There’s no business parameters except public response parameters
+
+</div>
+
+Business response parameters
+
+> Description：There’s no business parameters except public response parameters
+
+### 2.3 Interface of distributing cancel navigation command on robot 
+
+Interface address
+
++ POST|GET /v1/robot/pipe/cmd_navigation_stop
+
+Required parameter
+
+> Description：There’s no business parameters except public response parameters
+
+Business response parameters
+
+> Description：There’s no business parameters except public response parameters
+
+### 2.4 Search response interface of cancel navigation command that distribute on robot 
+
+Query the execution response of the command to cancel the navigation issued by the robot.
+
+Interface address
+
++ POST|GET /v1/robot/pipe/cmd_navigation_stop/result
+
+Required parameter
+
+> Description：There’s no business parameters except public response parameters
+
+Business response parameters
+
+> Description：There’s no business parameters except public response parameters
