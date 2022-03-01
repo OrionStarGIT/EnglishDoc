@@ -49,8 +49,6 @@ Required parameter
 
 > Description：There’s no business parameters except public response parameters
 
-</div>
-
 Business response parameters
 
 > Description：There’s no business parameters except public response parameters
