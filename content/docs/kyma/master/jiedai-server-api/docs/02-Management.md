@@ -21,9 +21,6 @@ Please first read the OrionStar Robotics Enterprise Open Platform API Documentat
 |corp_name|string|the name of firm|
 |corp_cate|string|form of business enterprise id|
 |corp_cate_name|string|Enterprise type name|
-|region_province_cn|string|Save, the enterprise list interface only has this field|
-|region_city_cn|string|City, the enterprise list interface only has this field|
-|region_district_cn|string|Zone, the enterprise list interface only has this field|
 |create_time|string|Add a time, an integer timestamp.|
 |update_time|string|Last modified time, the integer timestamp.|
 
@@ -85,8 +82,8 @@ The delay is greater when the network environment is not ideal.
 |battery.battery_rate|string|Remremaining percentage of current charge|
 |battery.is_charging|string|0: No 1: Yes|
 |task_info|object|The Task Information object|
-|task_info.task_name|string|The tasks that the robot is currently performing, such as: waiting for food delivery|
-|task_info.last_task_name|string|The last task the robot performed, such as: waiting for food delivery|
+|task_info.task_key|string|The tasks that the robot is currently performing, such as: waiting for food delivery|
+|task_info.last_task_key|string|The last task the robot performed, such as: waiting for food delivery|
 |location|object|Location information object|
 |location.state|string|Robot positioning status.ready: Localization successfully get_lost: Location failed|
 |location.pos_name|string|Current location of the robot, the default language.|
