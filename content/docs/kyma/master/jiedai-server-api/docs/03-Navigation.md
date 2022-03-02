@@ -24,13 +24,13 @@ Interface address
 
 Required parameter
 
-> Note: Do not forget to pass the public request parameters;
+> Note: Do not forget to pass the public request parameters, and is_batch must set to 1.
 
 <div class="fixed-table bordered-table">
 
 |Parameter|Type|Required|Description|
 |:-:|:-:|:-:|:-:|
-|msg_value|string|Yes|The spot name that needs to arrive |
+|msg_value|string|Yes|The spot name that needs to arrive. |
 </div>
 
 Business response parameters

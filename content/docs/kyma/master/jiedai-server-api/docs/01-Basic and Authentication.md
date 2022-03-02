@@ -106,6 +106,7 @@ Use get or post to send those parameters
 |agency_id|string|No|Agency id. This parameter must be passed if the issued appid is based on reseller authorization. It is a mandatory parameter in some interfaces and will be explained in the specific interface.|
 |ctrace|string|No|The trace string customized by the caller. The interface side will record this parameter in the log, which is used to trace the log when the two parties are jointly debugged. The maximum length cannot exceed 64 bytes, and it will be intercepted.。|
 |ctime|string|Yes|The current time of the integrator, an integer timestamp, in seconds, for example 1539336895.|
+|is_batch|int|Yes|0:sync 1:async. Set it to 1 always. |
 
 </div>
 
