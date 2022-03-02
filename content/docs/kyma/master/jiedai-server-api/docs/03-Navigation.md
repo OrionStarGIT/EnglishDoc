@@ -16,7 +16,7 @@ Please read the "Orion Star open API of Robot Enterprise Open Platform - Basics 
 
 ## 2. Robot Command Interface - Navigation
 
-### 2.1 Interface of command “navigate to the target place”that distribute o robot
+### 2.1 Navigate to the target place
 
 Interface address
 
@@ -37,7 +37,7 @@ Business response parameters
 
 > Description：There’s no business parameters except public response parameters
 
-### 2.2 To search the command response interface that distribute on the robot to navigate the robot to target place
+### 2.2 To Search the command response navigate the robot to target place
 
 To serach the execute return that distribute on the robot to navigate to target place
 
@@ -53,7 +53,7 @@ Business response parameters
 
 > Description：There’s no business parameters except public response parameters
 
-### 2.3 Interface of distributing cancel navigation command on robot 
+### 2.3 Cancel navigation command on robot 
 
 Interface address
 
@@ -67,7 +67,7 @@ Business response parameters
 
 > Description：There’s no business parameters except public response parameters
 
-### 2.4 Search response interface of cancel navigation command that distribute on robot 
+### 2.4 Search response cancel navigation command
 
 Query the execution response of the command to cancel the navigation issued by the robot.
 
