@@ -25,10 +25,9 @@ Get LuckiBot usage data
 
 Interface address
 
-+ Open API https://global-openapi.orionstar.com/proxyopen
++ Open API https://{domain}/proxyopen
 
 + POST  /dataopen/applet_zcb_item_line
-
 
 
 Required parameter
