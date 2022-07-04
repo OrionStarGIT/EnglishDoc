@@ -58,6 +58,46 @@ Applicable Platform:
 Setting up the lighting effect code demo can be found here (the code is suitable for Greetbot, please replace the robot jar package for other robots):[Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-21_11%3A32%3A54_RobotLight.zip)
 
 
+## Control lucki robot lights
+Method name: `playMultipleColor`
+Only can work with lucki
+
+Calling method:
+``` java
+public class LightMultipleColor extends LedLightBean {
+    //[0xFFFFFF,0xFFFFFF,0xFFFFFF,0xFFFFFF,0xFFFFFF,0xFFFFFF,0xFFFFFF,0xFFFFFF,0,0,0,0,0,0,0]
+    public LightMultipleColor(int[] rgbSet) {
+        this.rgbSet = rgbSet;
+        this.type = 6;
+        this.target = Definition.LAMP_TARGET_FOOT;
+    }
+}
+
+public void playMultipleColor(LightMultipleColor color) {
+    Log.d("123", "playMultipleColor color: " + color);
+    if (color == null) {
+        return;
+    }
+    color.setTarget(Definition.LAMP_TARGET_FOOT);
+    color.setType(6);
+    RobotApi.getInstance().setLedLight(reqID, color);
+}
+```
+
+Parameter Description:
+
+- `LightMultipleColor`: control 15 lights in the lucki robot.
+
+Return Value:
+
+``` java
+int result 1 command executed / -1 not executed
+```
+|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|:-:|:-:|:-:|:-:|:-:|
+|No|No|Yes|No|No|
+
+
 
 ## Get local SN
 Method name: `getRobotSn`
