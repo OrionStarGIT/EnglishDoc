@@ -268,11 +268,11 @@ Required parameter
 
 |Parameter|Type|Required|Description|
 |:-:|:-:|:-:|:-:|
-|corpid|string|deny|Enterprise uuid.Multiple numbers are separated by English commas.This parameter and the agency_id / ov_corpid parameter pass in at least one.|
-|robot_uuid|string|deny|Robot uuid.Multiple numbers are separated by English commas.|
-|robot_sn|string|deny|robot sn.Multiple numbers are separated by English commas.|
-|page|string|deny|Page parameter.Several pages, starting with 1.|
-|page_rows|string|deny|Page parameter.How many pieces of data per page.
+|corpid|string|no|Enterprise uuid.Multiple numbers are separated by English commas.This parameter and the agency_id / ov_corpid parameter pass in at least one.|
+|robot_uuid|string|no|Robot uuid.Multiple numbers are separated by English commas.|
+|robot_sn|string|no|robot sn.Multiple numbers are separated by English commas.|
+|page|string|no|Page parameter.Several pages, starting with 1.|
+|page_rows|string|no|Page parameter.How many pieces of data per page.
 
 </div>
 
