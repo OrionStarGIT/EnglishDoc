@@ -11,7 +11,10 @@ This doc can be used to demonstrate the robot open API of enterprise open platfo
 
 ### 1.2 Preparation
 
-Please read the "Orion Star open API of Robot Enterprise Open Platform - Basics and Authentication and Orion Star open API of Robot Enterprise Open Platform-Robot Command-Basic first
+Please read the [Basic and Authentication](https://ainirobot.gatsbyjs.io/docs/server/jiedai-server-api#basic-and-authentication-basic-and-authentication).
+
+And the public parameters include [Robot Command-Basic](https://ainirobot.gatsbyjs.io/docs/server/jiedai-server-api#robot-command-basic-robot-command-basic) parts.
+
 
 
 ## 2. Robot Command Interface - Navigation
