@@ -211,14 +211,14 @@ About task id, there are many tasks.
 
 |Task id|Meaning|Details|
 |:-:|:-:|:-:|
-|5LyR55ygH|ibernated|Hibernation, a low-power standby state. Although the robot remains connected to the Internet, it is impossible for the robot to perform any functions.|
+|5LyR55ygH|Ibernated|Hibernation, a low-power standby state. Although the robot remains connected to the Internet, it is impossible for the robot to perform any functions.|
 |562J5b6F6YCB6aSQ|Waiting for delivery|In this state, the robot can be considered to be idle. But be careful, no one knows if the waiter is about to/in the process of loading food.|
 |5oCl5YGc|Emergency stop  |At this point, the robot will not execute any commands unless someone helps it release the emergency stop knob|
 |5Y2H57qn|Upgrading|Do not send any commands to the robot at this time until the upgrade is complete|
 |5qyi6L-O|Welcome|In the welcome mode, in a state of welcoming guests|
 |6YCB6aSQ5Lit|Meal delivering|The meal delivery task is in progress, please do not interrupt.|
 |5YWF55S15Lit|Charging|Charging. Since the robot is connected to the charging cable, do not send any commands to the robot|
-|6Lez6Iie|Dance|Robots are dancing in Promotion Mode |
+|6Lez6Iie|Dancing|Robots are dancing in Promotion Mode |
 |6aKG5L2N5Lit|Leading|Robots are leading someone somewhere.|
 |5beh6Iiq|Cruise mode|The robot is in cruise mode.|
 </div>
