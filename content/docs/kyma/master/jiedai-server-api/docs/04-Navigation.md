@@ -34,7 +34,7 @@ Required parameter
 |Parameter|Type|Required|Description|
 |:-:|:-:|:-:|:-:|
 |msg_value|string|Yes|The spot name that needs to arrive. |
-|confirm_timeout|int|No|If need confirm at the roboit side, set a timeout seconds. |
+|confirm_timeout|int|No|If need confirm at the robot side, set a timeout seconds. |
 </div>
 
 Business response parameters
