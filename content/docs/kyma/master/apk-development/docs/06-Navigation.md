@@ -50,6 +50,12 @@ ActionListener navigationListener = new ActionListener() {
             case Definition.ACTION_RESPONSE_REQUEST_RES_ERROR:
                 // API that needs to control the chassis has already been called .Please stop first, then continue to call
                 break;
+            case Definition.ERROR_MULTI_ROBOT_WAITING_TIMEOUT:
+                // one robot waiting for other waiting time out.
+                break;
+            case Definition.ERROR_NAVIGATION_FAILED:
+                // the other problem caused failed.
+                break;
         }
     }
     @Override
@@ -60,6 +66,30 @@ ActionListener navigationListener = new ActionListener() {
                 break;
             case Definition.STATUS_NAVI_AVOID_END:
                 // obstacle disappeared
+                break;
+            case Definition.STATUS_START_NAVIGATION:
+                // start navigation
+                break;
+            case Definition.STATUS_START_CRUISE:
+                // start cruise
+                break;
+            case Definition.STATUS_NAVI_OUT_MAP:
+                // run out of map
+                break;
+            case Definition.STATUS_NAVI_MULTI_ROBOT_WAITING:
+                // start waiting for other robots
+                break;
+            case Definition.STATUS_NAVI_MULTI_ROBOT_WAITING_END:
+                // waiting end
+                break;
+            case Definition.STATUS_NAVI_GO_STRAIGHT:
+                // start go straight
+                break;
+            case Definition.STATUS_NAVI_TURN_LEFT:
+                // start turn left
+                break;
+            case Definition.STATUS_NAVI_TURN_RIGHT:
+                // start turn right
                 break;
         }
     }

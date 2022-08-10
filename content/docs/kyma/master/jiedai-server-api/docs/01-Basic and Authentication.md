@@ -77,17 +77,25 @@ https://{domain}/{version}/{category}/{method}
 1.4.2 Interface Domain Name
 
 + Nodes in China
+
 > Test environment domain name: test-openapi.ainirobot.com
+
 > Official environment domain name: openapi.ainirobot.com
+
 + Overseas nodes
+
 > Official environment domain name: global-openapi.orionstar.com
+
 > Official environment domain name in US: us-openapi.orionstar.com
 
 1.4.3 Interface Address
 
 In the specific interface description, only the interface address is given, that is, the part after the domain name. Please splicing the specific environment https://{domain} to call. For example:
+
 > The interface address is: /v1/auth/get_token 
+
 > The interface domain name is: openapi.ainirobot.com 
+
 > The interface address is: https://openapi.ainirobot.com/v1/auth/get_token
 
 ## 2. Public parameters
