@@ -77,10 +77,11 @@ https://{domain}/{version}/{category}/{method}
 1.4.2 Interface Domain Name
 
 + Nodes in China
-> Test environment domain name test-openapi.ainirobot.com
-> Official environment domain name openapi.ainirobot.com
+> Test environment domain name: test-openapi.ainirobot.com
+> Official environment domain name: openapi.ainirobot.com
 + Overseas nodes
-> Official environment domain name global-openapi.orionstar.com
+> Official environment domain name: global-openapi.orionstar.com
+> Official environment domain name in US: us-openapi.orionstar.com
 
 1.4.3 Interface Address
 
