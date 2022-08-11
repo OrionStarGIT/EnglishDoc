@@ -76,17 +76,22 @@ https://{domain}/{version}/{category}/{method}
 
 1.4.2 Interface Domain Name
 
-+ Nodes in China
++ Test Nodes (in China)
 
 > Test environment domain name: test-openapi.ainirobot.com
 
++ Nodes in China
+
 > Official environment domain name: openapi.ainirobot.com
 
-+ Overseas nodes
++ Nodes in US 
+
+> Official environment domain name: us-openapi.orionstar.com
+
++ Global nodes
 
 > Official environment domain name: global-openapi.orionstar.com
 
-> Official environment domain name in US: us-openapi.orionstar.com
 
 1.4.3 Interface Address
 
@@ -99,6 +104,7 @@ In the specific interface description, only the interface address is given, that
 > The interface address is: https://openapi.ainirobot.com/v1/auth/get_token
 
 ## 2. Public parameters
+
 ### 2.1 Public request parameters
 
 Use get or post to send those parameters
