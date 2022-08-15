@@ -16,7 +16,7 @@ BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.m
 
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
-Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A59%3A22_RobotSample-english.zip)
+Robot APP Sample Code: [Download](https://github.com/OrionStarGIT/RobotSample)
 
 
 ## Configure the default launcher
