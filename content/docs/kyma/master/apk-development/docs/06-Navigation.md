@@ -231,7 +231,7 @@ try {
 } catch (JSONException e) {
     e.printStackTrace();
 }
-Java 
+ 
 Specify speed <***This calling method is supported in V4.12****>
 try {
     JSONObject position = new JSONObject();

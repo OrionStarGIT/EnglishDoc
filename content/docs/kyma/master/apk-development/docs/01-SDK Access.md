@@ -87,7 +87,7 @@ public class ModuleCallback extends ModuleCallbackApi {
 
 2. Connect to the server
 
-``` Java 
+``` java 
 RobotApi.getInstance().connectServer(this, new ApiListener() {
     @Override
     public void handleApiDisabled() {}
@@ -106,13 +106,13 @@ RobotApi.getInstance().connectServer(this, new ApiListener() {
 
 3. Set callback
 
-``` Java 
+``` java 
 RobotApi.getInstance().setCallback(new ModuleCallback());
 ```
 
 4. End instruction
 
-``` Java 
+``` java 
 RobotApi.getInstance().finishModuleParser(reqId, result);
 ```
 
@@ -120,7 +120,7 @@ When the received request or voice command is processed, finishModuleParser need
 
 5. Registration status monitoring
 
-``` Java 
+``` java 
 StatusListener statusListener = new StatusListener() {
     @Override
     public void onStatusUpdate(String type, String data) throws RemoteException {};
