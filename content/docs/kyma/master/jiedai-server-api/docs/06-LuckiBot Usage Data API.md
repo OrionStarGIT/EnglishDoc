@@ -43,9 +43,27 @@ Required parameter
 |devices|string|No|This is robot SN, separated by commas (Optional)|
 |pageIndex|string|No|The data results are displayed in pagination, which page of data is needed (default 1st page) (Optional) e.g: pageIndex= 1|
 |pageSize|string|No|The max items displayed per page of data results (Optional) e.g: pageSize = 10|
+|classify|string|Yes|The data type, about the value type, have a look the table below.|
 
 </div>
 
+classify parameter value table
+
+<div class="fixed-table bordered-table">
+
+|value|Description|
+|:-:|:-:|
+|b_delivery_nums|Sum of tables delivered for Delivery Mode|
+|b_guide_nums|Sum of Guidance task execution times|
+|b_snack_seconds|Total duration of the cruise (minutes)|
+|adv_wakeup_num|Passenger flow statistics in Promotion Mode (That is: the number of times the robot actively broadcasts welcome words within 1-2 meters)|
+|run_mileage|Distance travelled (meters)|
+|ad_show_nums|The number of times ads played in Promotion Mode|
+|wakeup_num|The number of times of wake-up in Promotion mode|
+|voice_query_num|Number of voice conversations|
+|active_hour|Working hours of the robot (hours when it is powered on and connected to the Internet)|
+
+</div>
 
 ### 2.2 API request response
 
