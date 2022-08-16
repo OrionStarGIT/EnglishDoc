@@ -125,6 +125,8 @@ Use get or post to send those parameters
 
 </div>
 
++ Note: agency_id or corpid must choose one to send.
+
 ### 2.2	Global public response packet
 
 The responses of all interfaces are json strings (except for the interface of the download file class). The parameters contained in json are as follows:
