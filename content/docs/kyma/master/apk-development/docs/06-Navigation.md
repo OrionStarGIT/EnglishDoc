@@ -328,3 +328,66 @@ Applicable Platform:
 |Yes|Yes|Yes|Yes|No|
 
 </div>
+
+## Calculate path distance in Cruise mode
+Method name: getNaviPathInfo
+
+Method description: Calculate the path distance between two points, only support robot in cruise mode. And both ponts must in the cruise line.
+
+Calling method:
+
+``` java
+
+Pose startPos = new Pose();
+startPos.setX(-0.22329703f);
+startPos.setY(1.1073834f);
+startPos.setTheta(-1.2297891f);
+
+Pose endPos = new Pose();
+endPos.setX(0.09533833f);
+endPos.setY(-0.7406802f);
+endPos.setTheta(-2.886187f);
+
+RobotApi.getInstance().getNaviPathInfo(reqID,
+    startPos,
+    endPos,
+    new CommandListener() {
+        @Override
+        public void onResult(int status, String response, String extraData) {
+            try {
+                JSONObject json = new JSONObject(response);
+                double pathLength = json.getDouble("pathLength");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        @Override
+        public void onError(int errorCode, String errorString, String extraData) {
+            Log.d('OnError',errorCode);
+        }
+    });
+```
+
+Parameter Description:
+
+- reqId : int type command id
+- startPos,endPos : the input points
+- listener : CommandListener type message callback
+
+Return value:
+
+``` java
+int result 0 command executed / -1 not executed
+```
+
+*Note: Before calling this interface, you need to make sure that robot has been located and in cruise mode*
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|No|
+
+</div>
