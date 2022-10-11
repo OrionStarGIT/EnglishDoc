@@ -79,6 +79,33 @@ Applicable Platform:
 
 </div>
 
+## Arc Motion 
+Method name: motionArcWithObstacles
+
+Calling method:
+
+``` java
+RobotApi.getInstance().motionArcWithObstacles(reqID,0.5,0,new CommandListener(){
+    @Override
+    public void onResult(int result, String message, String extraData) {
+    }
+    @Override
+    public void onStatusUpdate(int status, String data, String extraData) {
+    }
+});
+``` 
+
+- lineSpeed : line speed, range is  -1.2 ~ 1.2
+- angularSpeed : angular speed, range is -2 ~ 2
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|No|
+
 ## Stop
 Method name: stopMove
 
