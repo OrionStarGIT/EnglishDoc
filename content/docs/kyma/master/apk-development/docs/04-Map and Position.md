@@ -331,6 +331,41 @@ Applicable Platform:
 
 </div>
 
+## Pose listener
+This is a listener about post event, when post change or pose status change, it will trigger this listener.
+
+``` java
+public class Pose {
+
+    public float px, py, theta;
+    public final long time;
+    public String name;
+    /**
+     * SAFE = 0;      // normal area
+     * NOT_SAFE = 1;  // dangerous area
+     * OBSTACLE = 2;  // forbidden area
+     * OUTSIDE = 3;   // out of the map
+     */
+    public int status;
+    public float distance;
+}
+
+RobotApi.getInstance().registerStatusListener(Definition.STATUS_POSE,
+    new StatusListener(){
+        @Override
+        public void onStatusUpdate(String type, String value) {
+            Pose pose = GsonUtil.fromJson(value, Pose.class);
+        }
+    });
+``` 
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|No|
+
+</div>
 
 ## Switch map
 Method name: switchMap
