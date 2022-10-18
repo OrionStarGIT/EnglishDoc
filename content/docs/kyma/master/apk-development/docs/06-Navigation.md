@@ -329,10 +329,10 @@ Applicable Platform:
 
 </div>
 
-## Calculate path distance in Cruise mode
+## Calculate path distance following the route 
 Method name: getNaviPathInfo
 
-Method description: Calculate the path distance between two points, only support robot in cruise mode. And both points must in the cruise line.
+Method description: To calculate the path distance between two points under the route navigation mode. Both of the points must in the cruise line.
 
 Calling method:
 
