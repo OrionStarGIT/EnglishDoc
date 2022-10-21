@@ -262,6 +262,8 @@ No Business response parameter
 }
 ```
 
+
+<!-- 
 ## 4.Signature sign calculation and verification
 
 ### 4.1Signature algorithm
@@ -345,3 +347,4 @@ cddce808de0032747a0b7be50, 'test_secret')
 
 > 79402d812c1e641d580d4cede84db7d14960444974e8ea6c19bd533f5be93fde
 
+-->
