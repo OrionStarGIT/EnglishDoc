@@ -27,10 +27,12 @@ int faceX; //X-axis coordinate of face
 int faceY; //Y-axis coordinate of face
 int bodyX; //X-axis coordinate of human body
 int bodyY: //Y-axis coordinate of human body
-String remoteFaceId //Remote registration id
-int age; //human age
-String gender; //human gender
-int glasses;//if human wearing glasses
+
+//The following fields are deprecated for legal reasons
+String remoteFaceId //deprecated
+int age; //deprecated
+String gender; //deprecated
+int glasses;//deprecated
 ```
 
 ## Person change monitoring
@@ -295,6 +297,7 @@ Applicable Platform:
 
 </div>
 
+<!-- 
 ## Remote identification
 Method name: getPersonInfoFromNet 
 
@@ -332,3 +335,4 @@ Applicable Platform:
 
 </div>
 
+-->
