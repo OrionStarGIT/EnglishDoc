@@ -8,7 +8,7 @@ Visual ability currently mainly refers to two modules of person detection and re
 
 Personnel information detection is a local capability. When a person is standing in front of the robot (excluding poor light conditions), the robot can detect the person in front. When the person is standing far away, both the face and the human body can be detected, and when the person is standing closer Only face information can be detected. When the person id is greater than or equal to 0, it means that the person's face information is complete, and the person's face photo can be obtained for recognition.
 
-Person recognition requires the use of face photos for recognition. This ability is deprecated for legal reasons.
+Person recognition requires the use of face photos for recognition. This ability is deprecated for legal reasons. You can use Google or Microsoft person recognition instead.
 
 ## Person information
 
