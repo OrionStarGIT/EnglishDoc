@@ -50,6 +50,12 @@ ActionListener navigationListener = new ActionListener() {
             case Definition.ACTION_RESPONSE_REQUEST_RES_ERROR:
                 // API that needs to control the chassis has already been called .Please stop first, then continue to call
                 break;
+            case Definition.ERROR_MULTI_ROBOT_WAITING_TIMEOUT:
+                // one robot waiting for other waiting time out.
+                break;
+            case Definition.ERROR_NAVIGATION_FAILED:
+                // the other problem caused failed.
+                break;
         }
     }
     @Override
@@ -60,6 +66,30 @@ ActionListener navigationListener = new ActionListener() {
                 break;
             case Definition.STATUS_NAVI_AVOID_END:
                 // obstacle disappeared
+                break;
+            case Definition.STATUS_START_NAVIGATION:
+                // start navigation
+                break;
+            case Definition.STATUS_START_CRUISE:
+                // start cruise
+                break;
+            case Definition.STATUS_NAVI_OUT_MAP:
+                // run out of map
+                break;
+            case Definition.STATUS_NAVI_MULTI_ROBOT_WAITING:
+                // start waiting for other robots
+                break;
+            case Definition.STATUS_NAVI_MULTI_ROBOT_WAITING_END:
+                // waiting end
+                break;
+            case Definition.STATUS_NAVI_GO_STRAIGHT:
+                // start go straight
+                break;
+            case Definition.STATUS_NAVI_TURN_LEFT:
+                // start turn left
+                break;
+            case Definition.STATUS_NAVI_TURN_RIGHT:
+                // start turn right
                 break;
         }
     }
@@ -85,6 +115,12 @@ RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, tim
 RobotApi.getInstance().startNavigation(reqId, pose, coordinateDeviation, time, navigationListener);
 ```
 
+4. Specify navigation acceleration (***This calling method is supported in V4.12***)(This interface only supports Lucki for the time being)
+
+``` java
+RobotApi.getInstance().startNavigation(reqId, destName, coordinateDeviation, time, linearSpeed, angularSpeed, isAdjustAngle, destinationRange, wheelOverCurrentRetryCount, multipleWaitTime, priority, linearAcceleration, angularAcceleration, navigationListener);
+```
+
 Parameter Description:
 
 - destName: Navigation destination name (must be set by setLocation first)
@@ -92,7 +128,14 @@ Parameter Description:
 - coordinateDeviation: the range of the destination, if the distance to the destination is within this range, it is considered to have been reached
 - time : Obstacle avoidance timeout time. If the robot's moving distance does not exceed 0.1m within this time, the navigation will fail, in milliseconds.
 - linearSpeed : navigation linear speed, range: 0.1 ~ 0.85 m/s default value: 0.7 m/s
-- angularSpeed：Navigation angular speed, range: 0.4 ~ 1.4 m/s Default value: 1.2 m/s The final navigation speed is obtained by combining linear speed and angular speed. Different linear speeds and angular speeds have an impact on the navigation movement mode. It is recommended that the linear speed and Angular speed keeps a certain law: angularSpeed ​​= 0.4 + (linearSpeed-0.1) / 3 * 4
+- angularSpeed : Navigation angular speed, range: 0.4 ~ 1.4 m/s Default value: 1.2 m/s The final navigation speed is obtained by combining linear speed and angular speed. Different linear speeds and angular speeds have an impact on the navigation movement mode. It is recommended that the linear speed and Angular speed keeps a certain law: angularSpeed = 0.4 + (linearSpeed-0.1) / 3 * 4
+- isAdjustAngle : Whether to adapt to the angle of the heading at the end of the navigation. If false is passed, it will return to the angle when the point is set
+- destinationRange : When the target point cannot be reached, the navigation is considered as successful as the distance from the target point
+- wheelOverCurrentRetryCount: Number of wheel stall attempts during navigation
+- multipleWaitTime : If there are multiple machines waiting during the navigation process, how long will it time out?
+- priority : Is 0
+- linearAcceleration : Navigation line acceleration, range: 0.4 ~ 0.8 m/s2 Default value: 0.7 m/s2
+- angularAcceleration : Navigation angular acceleration, range: 0.4 ~ 0.9 m/s2 Default value: 0.8 m/s2 The final navigation angular acceleration velocity is obtained after linear velocity conversion. Different linear accelerations and angular accelerations have an impact on the navigation motion mode. It is recommended that linear acceleration and Angular acceleration maintains a certain law: angularAcceleration= (linearSpeed / 0.8)
 
 *Note: Before calling this interface, you need to make sure that it has been located*
 
@@ -100,7 +143,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -122,7 +165,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -188,7 +231,7 @@ try {
 } catch (JSONException e) {
     e.printStackTrace();
 }
-Java 
+ 
 Specify speed <***This calling method is supported in V4.12****>
 try {
     JSONObject position = new JSONObject();
@@ -216,7 +259,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -238,7 +281,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -280,7 +323,70 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|No|
+
+</div>
+
+## Calculate path distance following the route 
+Method name: getNaviPathInfo
+
+Method description: To calculate the path distance between two points under the route navigation mode. Both of the points must in the cruise line.
+
+Calling method:
+
+``` java
+
+Pose startPos = new Pose();
+startPos.setX(-0.22329703f);
+startPos.setY(1.1073834f);
+startPos.setTheta(-1.2297891f);
+
+Pose endPos = new Pose();
+endPos.setX(0.09533833f);
+endPos.setY(-0.7406802f);
+endPos.setTheta(-2.886187f);
+
+RobotApi.getInstance().getNaviPathInfo(reqID,
+    startPos,
+    endPos,
+    new CommandListener() {
+        @Override
+        public void onResult(int status, String response, String extraData) {
+            try {
+                JSONObject json = new JSONObject(response);
+                double pathLength = json.getDouble("pathLength");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        @Override
+        public void onError(int errorCode, String errorString, String extraData) {
+            Log.d('OnError',errorCode);
+        }
+    });
+```
+
+Parameter Description:
+
+- reqId : int type command id
+- startPos,endPos : the input points
+- listener : CommandListener type message callback
+
+Return value:
+
+``` java
+int result 0 command executed / -1 not executed
+```
+
+*Note: Before calling this interface, you need to make sure that robot has been located and in cruise mode*
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 

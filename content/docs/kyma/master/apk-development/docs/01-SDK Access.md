@@ -6,17 +6,17 @@ description: 'update: 2021-07-01'
 ## Find the right version SDK
 Different robot need different sdk lib, here is the sdk lib list. Check your robot and use the right one. Notice: even the Demo Code, you have to make sure the sdk lib right.
 
-GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A13_robotservice_release_bxm_v1.1.1.jar)
+GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
 
-Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
+Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A53%3A10_robotservice.zip)
 
-Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A38_robotservice_release_saiph_V6.11.jar)
+Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A43%3A13_robotservice_lucki.zip)
 
-BigScreen SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-06-23_16%3A16%3A27_robotservice_release_mini_v6.5.jar)
+BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
 
 Download the SDK lib, put it into app/libs folder (or replace sample code lib)
 
-Robot APP Sample Code: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-07-13_14%3A32%3A22_RobotSample-english.zip)
+Robot APP Sample Code: [Download](https://github.com/OrionStarGIT/RobotSample)
 
 
 ## Configure the default launcher
@@ -46,10 +46,10 @@ If the App needs to be launched by default after booting, it needs to be configu
  
 And set in the settings (three-finger pull down and click on the settings to enter)-Boot Apps
 
-<img src="./assets/boot_app.png" width="400px">
+<img src="./assets/boot_app.png"/>
  
-## Authority
 For complete SDK access, the following permissions need to be declared in AndroidManifest.xml
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -87,7 +87,7 @@ public class ModuleCallback extends ModuleCallbackApi {
 
 2. Connect to the server
 
-``` Java 
+``` java 
 RobotApi.getInstance().connectServer(this, new ApiListener() {
     @Override
     public void handleApiDisabled() {}
@@ -106,13 +106,13 @@ RobotApi.getInstance().connectServer(this, new ApiListener() {
 
 3. Set callback
 
-``` Java 
+``` java 
 RobotApi.getInstance().setCallback(new ModuleCallback());
 ```
 
 4. End instruction
 
-``` Java 
+``` java 
 RobotApi.getInstance().finishModuleParser(reqId, result);
 ```
 
@@ -120,7 +120,7 @@ When the received request or voice command is processed, finishModuleParser need
 
 5. Registration status monitoring
 
-``` Java 
+``` java 
 StatusListener statusListener = new StatusListener() {
     @Override
     public void onStatusUpdate(String type, String data) throws RemoteException {};
@@ -134,3 +134,9 @@ RobotApi.getInstance().unregisterStatusListener(statusListener);
 
 - Definition.STATUS_POSE: The current coordinates of the robot, continuously reported
 - Definition.STATUS_POSE_ESTIMAT: current positioning status, reported when the positioning status changes
+
+6. Set reqId
+
+Many SDK methods need to pass in the parameter reqId, which is an id used for debugging and tracking logs. 
+Passing in any number can make the function work normally, but for the convenience of log tracking and debugging, 
+it is recommended to make reqid an self-increasing static variable, or pass in different reqId to distinguish the calling function according to business needs.

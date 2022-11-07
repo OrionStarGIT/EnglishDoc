@@ -11,7 +11,7 @@ Listed in the table is the minimum version of each robot model that can be compa
 
 <div class="fixed-table bordered-table">
 
-|core version|Greetbot|Mini|Lucki|Baodaping|
+|core version|Greetbot|Mini|Lucki|BigScreenBot|
 |:----------:|:------:|:---|:---:|:-----------:|
 |2.3.0|6.1|5.13|5.7|5.4|
 |2.2.0|5.13|5.13|5.7|5.4|

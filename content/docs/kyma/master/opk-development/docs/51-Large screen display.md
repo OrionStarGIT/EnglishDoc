@@ -9,7 +9,7 @@ Component name: `ExDisplay`
 
 Component description: 
 
-The content display component that controls the big screen of the robot is only valid on the big screen robot of the Leopard.
+The content display component that controls the big screen of the robot is only valid on the big screen robot of the BigScreen.
 
 Example of use:
 
@@ -54,7 +54,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |No|No|No|No|Yes|
 

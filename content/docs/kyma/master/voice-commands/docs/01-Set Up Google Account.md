@@ -7,9 +7,9 @@ Use Google Cloud to make your robot respond to voice commands in all languages.
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
-|Coming Soon|Yes|No|No|No|
+|Yes|Yes|Yes|Yes|Yes|
 
 </div>
 

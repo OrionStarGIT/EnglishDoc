@@ -23,7 +23,7 @@ adb push [your opk local path] /sdcard/robot/rndata/debug.opk
 
 Different machines have different installation methods.
 
-For Mini and Baodaping, Use the following commands:
+For Mini and BigScreenBot, Use the following commands:
 
 ```shell
 adb shell am broadcast -a com.ainirobot.remotecontrolservice.rninstallfinish --es path /sdcard/robot/rndata/debug.opk  --es id "appId"
@@ -43,7 +43,7 @@ adb.exe shell am broadcast -a com.ainirobot.install.plugin --es path /sdcard/rob
 
 ## Uninstall the pack package locally
 
-Mini and Greetbot:
+Mini and Greetbot and Lucki:
 
 ```shell
 adb shell am broadcast -a com.ainirobot.uninstall.plugin --es appid "appid"

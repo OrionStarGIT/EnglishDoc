@@ -1,0 +1,8 @@
+{
+  "spec":{
+    "id":"jiedai-server-api",
+    "displayName":"Enterprise Open Platform API",
+    "description":"Enterprise Open Platform API",
+    "type":"Server"
+  }
+}

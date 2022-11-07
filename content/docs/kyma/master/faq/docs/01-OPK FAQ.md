@@ -39,10 +39,10 @@ robot to see the key logs, for example We want to test that "open the developer'
 robot can get the correct Domain and intent. You can get the following answer:
 
    <video width="270" height="480" controls>
-            <source src="/assets/docs/kyma/master/faq/docs/assets/voice.mp4" type="video/mp4">
+            <source src="/assets/docs/kyma/master/faq/docs/assets/voice_video.mp4" type="video/mp4">
    </video>
 
-<img src="./assets/voice.jpeg" width="400px">
+<img src="./assets/voice_studio.png">
 
 demonstrate_app&open,It is the answer we configured, and the test is complete.
 
@@ -73,7 +73,7 @@ This command is used to enter the terminal shell of the robot. Here are a few co
 
 View machine sn code: adb shell getprop|grep serial
 
-<img src="./assets/sn_code.png" width="400px">
+<img src="./assets/sn_code.png">
 
 Clear module app data: adb shell pm clear com.ainirobot.moduleapp
 
@@ -132,7 +132,7 @@ The trigger scheduling is realized by the robot's workflow. When debugging in th
 environment is borrowed to run the local code on the computer. At this time, there is no robot's workflow function, so
 the trigger cannot be used in the debug mode, otherwise it may be possible When a red screen appears:
 
-<img src="./assets/red_screen.png" width="400px">
+<img src="./assets/red_screen.png">
 
 ### 2. The page you jump to must be registered
 
@@ -168,7 +168,7 @@ After opening, you can view the real-time log in the Logcat module of the main i
 package name, keywords, etc. For other detailed operations, please refer to the specific use of android studio logcat on
 Baidu.
 
-<img src="./assets/as_log.png" width="400px">
+<img src="./assets/as_log.png">
 
 ## Do not update after opk is installed
 
@@ -177,10 +177,6 @@ robot will not download and update the latest opk immediately, but need to re-en
 and download the new opk, see the video for specific operations.
 
 Three-finger pull-down -> Application Center -> Little Leopard.
-
-   <video width="270" height="480" controls>
-            <source src="/assets/docs/kyma/master/faq/docs/assets/do_not_update.mp4" type="video/mp4">
-   </video>
 
 ## Error obtaining application resources
 
@@ -242,8 +238,8 @@ When you encounter problems such as opk reporting errors or crashes during the d
 
 ## Debug red screen
 
-<img src="./assets/debug_red_screen.png" width="400px">
-<img src="./assets/debug_red_screen1.png" width="400px">
+<img src="./assets/debug_red_screen.png">
+<img src="./assets/debug_red_screen1.png">
 
 When debugging appears such a red screen that cannot be debugged, you can try to use this official solution to solve:
 
@@ -267,7 +263,7 @@ File path address (reference, the actual path is different)
 Add .bash_profile to shCommand and load components.
 ```
 
-<img src="./assets/debug_red_screen2.png" width="400px">
+<img src="./assets/debug_red_screen2.png">
 
 ## orionos-sh run error
 
@@ -360,8 +356,8 @@ But Lucky Leopard has been updating the dependent library version due to functio
 
 To the version supported by the robot you purchased. As shown below:
 
-<img src="./assets/core1.png" width="400px">
-<img src="./assets/core2.png" width="400px">
-<img src="./assets/core3.png" width="400px">
-<img src="./assets/core4.png" width="400px">
+<img src="./assets/core1.png">
+<img src="./assets/core2.png">
+<img src="./assets/core3.png">
+<img src="./assets/core4.png">
 
