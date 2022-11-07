@@ -250,6 +250,8 @@ Applicable Platform:
 
 </div>
 
+<!-- 
+
 ## Remote registration
 Method name: startRegister
 
@@ -297,7 +299,7 @@ Applicable Platform:
 
 </div>
 
-<!-- 
+
 ## Remote identification
 Method name: getPersonInfoFromNet 
 
