@@ -7,9 +7,6 @@ spec:
   apk:
     - displayName: APK development
       id: apk-development
-  opk:
-    - displayName: OPK development
-      id: opk-development
   voice:
     - displayName: Voice Commands
       id: voice-commands
