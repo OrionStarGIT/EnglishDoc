@@ -4,17 +4,8 @@ description: 'update: 2021-07-01'
 ---
 
 ## Find the right version SDK
-Different robot need different sdk lib, here is the sdk lib list. Check your robot and use the right one. Notice: even the Demo Code, you have to make sure the sdk lib right.
 
-GreetBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
-
-Mini SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-16_15%3A53%3A10_robotservice.zip)
-
-Lucki SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A43%3A13_robotservice_lucki.zip)
-
-BigScreenBot SDK: [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_16%3A40%3A58_robotservice.zip)
-
-Download the SDK lib, put it into app/libs folder (or replace sample code lib)
+Most of the robot using the same SDK, download the Robot APP sample you can find it under libs folder.
 
 Robot APP Sample Code: [Download](https://github.com/OrionStarGIT/RobotSample)
 
@@ -52,6 +43,7 @@ For complete SDK access, the following permissions need to be declared in Androi
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="com.ainirobot.coreservice.robotSettingProvider" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 ```
