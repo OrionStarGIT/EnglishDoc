@@ -250,6 +250,94 @@ Applicable Platform:
 
 </div>
 
+## Start focus follow
+Method name: startFocusFollow
+
+Calling method:
+
+``` java
+RobotApi.getInstance().startFocusFollow(reqId, faceId, lostTimeout, maxDistance, new ActionListener() {
+    @Override
+    public void onStatusUpdate(int status, String data) {
+        switch (status) {
+            case Definition.STATUS_TRACK_TARGET_SUCCEED:
+                //follow the target succeed
+                break;
+            case Definition.STATUS_GUEST_LOST:
+                //lost target
+                break;
+            case Definition.STATUS_GUEST_FARAWAY:
+                //target out of range
+                break;
+            case Definition.STATUS_GUEST_APPEAR:
+                //target in range again
+                break;
+        }
+    }
+    @Override public void onError(int errorCode, String errorString) {
+        switch (errorCode) {
+            case Definition.ERROR_SET_TRACK_FAILED:
+            case Definition.ERROR_TARGET_NOT_FOUND:
+                //can't find target
+                break;
+            case Definition.ACTION_RESPONSE_ALREADY_RUN:
+                //not ready, please stop all focus follow and try again
+                break;
+            case Definition.ACTION_RESPONSE_REQUEST_RES_ERROR:
+                //There are already api calls that need to control the chassis (such as guidance and navigation). Please stop before continuing to call
+                break;
+        }
+    }
+    @Override public void onResult(int status, String responseString) {
+        Log.d(TAG, "startTrackPerson onResult status: " + status);
+        switch (status) {
+            case Definition.ACTION_RESPONSE_STOP_SUCCESS:
+                //api call "stopFocusFollow" succeed
+                break;
+        }
+    }
+});
+``` 
+Parameter Description:
+
+- faceID: face id, which can be obtained through local face recognition (Person id).
+- lostTimeout：How long can we not identify the target and report the target loss status.
+- maxDistance：How far is the target to report the over-range status. Unit meter.
+
+*Note1: When this api is used, it will take up chassis resources. You cannot perform any chassis operations at the same time, including navigation.*
+
+*Note2: Don't call this api repeatedly to track the same person, just start startFocusFollow again after the following is lost or stopped.*
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|Yes|
+
+</div>
+
+## Stop focus follow
+Method name: stopFocusFollow
+
+Calling method:
+
+``` java
+RobotApi.getInstance().stopFocusFollow(reqId);
+``` 
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|Yes|
+
+</div>
+
+
 <!-- 
 
 ## Remote registration
