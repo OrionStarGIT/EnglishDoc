@@ -57,7 +57,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -89,7 +89,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -131,7 +131,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -151,7 +151,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -175,7 +175,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -200,7 +200,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -225,7 +225,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -251,7 +251,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -259,7 +259,8 @@ Applicable Platform:
 
 
 
-## Audio data collection
+## Sound recording
+This is a part about sound recording.
 
 ``` java
 //Audio sampling rate (fixed 16000)
@@ -297,13 +298,18 @@ private void deinterleaveData(byte[] src, byte[] leftdest, byte[] rightdest, int
 }
 ```
 
-*Note: All parameters are fixed parameters and cannot be changed, otherwise the data may not be collected.*
+*Note1: All parameters are fixed parameters and cannot be changed, otherwise the data may not be collected.*
+
+
+*Note2: All the robots don't support VOIP/SIP protocol, even if use those settings.*
+
+There is a demo to show this function(worked with Mini):  [Download](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2021-12-20_17%3A27%3A28_OrionAudioRecord.zip)
 
 Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -313,6 +319,7 @@ Applicable Platform:
 
 ## text to mp3
 Method name: textToMp3
+Notice: this API only work with Chinese Launguage.
 
 Calling method:
 ``` java
@@ -363,7 +370,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 

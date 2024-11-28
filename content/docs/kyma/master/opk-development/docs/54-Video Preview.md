@@ -58,7 +58,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |No|No|No|No|Yes|
 

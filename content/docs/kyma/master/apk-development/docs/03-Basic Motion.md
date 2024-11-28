@@ -36,7 +36,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -73,11 +73,38 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
 </div>
+
+## Arc Motion 
+Method name: motionArcWithObstacles
+
+Calling method:
+
+``` java
+RobotApi.getInstance().motionArcWithObstacles(reqID,0.5,0,new CommandListener(){
+    @Override
+    public void onResult(int result, String message, String extraData) {
+    }
+    @Override
+    public void onStatusUpdate(int status, String data, String extraData) {
+    }
+});
+``` 
+
+- lineSpeed : line speed, range is  -1.2 ~ 1.2
+- angularSpeed : angular speed, range is -2 ~ 2
+
+Applicable Platform:
+
+<div class="fixed-table bordered-table">
+
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
+|:-:|:-:|:-:|:-:|:-:|
+|Yes|Yes|Yes|Yes|No|
 
 ## Stop
 Method name: stopMove
@@ -101,7 +128,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -143,7 +170,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|No|
 
@@ -177,7 +204,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|No|No|Yes|
 
@@ -213,10 +240,10 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|No|No|No|No|
 
 </div>
 
-*Note: Please check if the Leopard Secret you are using has a rear camera*
+*Note: Please check if the Robot you are using has a rear camera*

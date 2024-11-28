@@ -55,7 +55,7 @@ public render() {
 - `isPreWakeupNeedBody`: Whether to trigger the pre-wakeup callback when the human body is detected, the default is true
 - `preWakeupIntervalTime`: the interval time between two pre-wakeups, below this value, the pre-wakeup will not be triggered again, the default is 20000 milliseconds
 - `recognizeTimeout`: Face recognition timeout time, the default is 2000 milliseconds
-- `isWakeupNeedRecognize`: Whether to wake up to get the detailed information of registration (this parameter is only valid on Leopard big screen)
+- `isWakeupNeedRecognize`: Whether to wake up to get the detailed information of registration (this parameter is only valid on GreetBot big screen)
 
 **Status description:**
 
@@ -91,7 +91,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -177,7 +177,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -248,7 +248,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -313,7 +313,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -375,7 +375,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -429,7 +429,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 

@@ -7,12 +7,12 @@ spec:
   apk:
     - displayName: APK development
       id: apk-development
-  opk:
-    - displayName: OPK development
-      id: opk-development
   voice:
     - displayName: Voice Commands
       id: voice-commands
+  server:
+    - displayName: Enterprise Open Platform API
+      id: jiedai-server-api
   faq:
     - displayName: FAQ
       id: faq

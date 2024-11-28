@@ -9,7 +9,7 @@ Component name: `FaceTrackSoundLocalizationComponent`
 
 Component description: 
 
-Composite component, using StandardFaceTrackComponent and SoundLocalizationComponent to automatically track human faces. During tracking, the robot can be called by "Little Leopard Little Leopard", and the robot will turn to the direction of the sound source and continue to search for people. For tracking, the component will continue to run and will not stop actively, and the user needs to actively perform component uninstallation.
+Composite component, using StandardFaceTrackComponent and SoundLocalizationComponent to automatically track human faces. During tracking, the robot can be called by it's name (default xiao bao xiao bao), and the robot will turn to the direction of the sound source and continue to search for people. For tracking, the component will continue to run and will not stop actively, and the user needs to actively perform component uninstallation.
 
 Example of use:
 ```java
@@ -67,7 +67,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -146,7 +146,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -221,7 +221,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|Yes|Yes|Yes|
 
@@ -302,7 +302,7 @@ Applicable Platform:
 
 <div class="fixed-table bordered-table">
 
-|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |:-:|:-:|:-:|:-:|:-:|
 |Yes|Yes|No|No|No|
 

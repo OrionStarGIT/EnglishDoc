@@ -21,7 +21,7 @@ For example, we want to open a developer demo Demo:
 
 ### 2. Set the APK as the default APK.
 
-This method is not suitable for debugging, please refer to the [SDK access](https://orionbase.orionstar.com/doc?m=21&h=a077487&lang=cn#%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%90%AF%E5%8A%A8%E7%A8%8B%E5%BA%8F)
+This method is not suitable for debugging, please refer to the [SDK access](https://ainirobot.gatsbyjs.io/docs/apk/apk-development/#sdk-access-sdk-access)
 part in apk development for details.
 
 
@@ -33,14 +33,18 @@ components correctly, remember.
 Because the robot microphone array requires long sound pickup, there are some restrictions on using the audio recorder
 function from the Android framework.
 
-It must be under specific audio settings to receive sound. For details, please refer to SDK document->Audio->[Robot audio collection parameters](https://orionbase.cn/doc?m=21&h=6065a29&lang=cn#%E9%9F%B3%E9%A2%91%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86)
+It must be under specific audio settings to receive sound. For details, please refer to SDK document->Audio->[Robot audio collection parameters](https://ainirobot.gatsbyjs.io/docs/apk/apk-development/#api-reference-speech-ability-sound-recording)
 
-## Camera orientation is wrong
+## Camera orientation is wrong or can't work
 
 The camera of the robot is selected to be 90° in the direction after the Android standard method is started. This is
 because the robot does not have a gyroscope. The default is a vertical screen camera in the program, but the robot is
 actually a horizontal screen device.The solution is very simple. It can be corrected by setting the camera rotation -90°
-or camera rotation 270° through the Android API (or the API of other video SDKs).
+or camera rotation 270° through the Android API (or the API of other video SDKs). Here are two demo for robot camera.
+
+[Camera demo for mini robot](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2022-05-31_16%3A29%3A07_CameraPreview-master.zip)
+
+[Camera demo for other robot](https://orion-base-test-1256573505.cos.ap-beijing.myqcloud.com/cn_docs_file/2022-06-27_17%3A00%3A09_CameraV2.zip)
 
 ## Lucki top camera
 

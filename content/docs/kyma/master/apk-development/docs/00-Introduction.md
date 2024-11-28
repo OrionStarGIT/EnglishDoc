@@ -10,7 +10,7 @@ RobotOS is developed based on the Android platform and provides a set of SDKs fo
 
 <div class="fixed-table bordered-table">
 
-|version|date|description|Greetbot|Mini|Lucki|Baoxiaodi MAX|Baodaping|
+|version|date|description|GreetBot|Mini|Lucki|DeliverBot|BigScreenBot|
 |-|-|-|-|-|-|-|-|
 |V1.1.1|2021/3/2|-|V6.2 and above|V6.2 and above|V6.2 and above|-|-|
 
